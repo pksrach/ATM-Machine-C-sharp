@@ -98,23 +98,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_insert_credit_card_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\insert_credit_card_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Background Main-01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo SS5 Bank.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Flat Khmer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Flat English.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
