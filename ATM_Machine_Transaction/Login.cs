@@ -16,5 +16,82 @@ namespace ATM_Machine_Transaction
         {
             InitializeComponent();
         }
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn1.Text;
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn2.Text;
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn3.Text;
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn4.Text;
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn5.Text;
+        }
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn6.Text;
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn7.Text;
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn8.Text;
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn9.Text;
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtPIN.Text += btn0.Text;
+        }
+
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            txtPIN.Clear();
+        }
+
+        private void btnRmv_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void txtPIN_TextChanged(object sender, EventArgs e)
+        {
+            if(txtPIN.Text.Count() >= 4)
+            {
+                if (txtPIN.Text == "3322") {
+                MessageBox.Show("Successfully", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPIN.Clear();
+                }
+                else{ 
+                MessageBox.Show("Incorrect", "Try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPIN.Clear();
+                }
+            }
+        }
     }
 }
