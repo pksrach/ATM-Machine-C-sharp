@@ -79,25 +79,25 @@ namespace ATM_Machine_Transaction
         {
             Close();
         }
-        
+
         private void txtPIN_TextChanged(object sender, EventArgs e)
         {
-            if(txtPIN.Text.Count() >= 4)
+            if (txtPIN.Text.Count() >= 4)
             {
                 if (txtPIN.Text == "3322")
                 {
                     MessageBox.Show("Successfully", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPIN.Clear();
-                    this.Dispose();
-                    
-                    
+                    Main_frm frm = new Main_frm();
+                    frm.Show();
+                    this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("Incorrect", "Try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtPIN.Clear();
                 }
-        }
+            }
         }
         private void myEventHover(object sender, EventArgs e)
         {

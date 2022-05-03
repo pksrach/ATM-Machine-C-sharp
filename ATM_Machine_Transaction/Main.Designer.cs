@@ -71,11 +71,11 @@ namespace ATM_Machine_Transaction
             // lbExit
             // 
             this.lbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbExit.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lbExit.Appearance.Options.UseFont = true;
             this.lbExit.Appearance.Options.UseForeColor = true;
-            this.lbExit.AppearanceHovered.Font = new System.Drawing.Font("Microsoft YaHei UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lbExit.AppearanceHovered.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.AppearanceHovered.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.lbExit.AppearanceHovered.ForeColor = System.Drawing.Color.White;
             this.lbExit.AppearanceHovered.Options.UseFont = true;
@@ -85,9 +85,10 @@ namespace ATM_Machine_Transaction
             this.lbExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbExit.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
             this.lbExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lbExit.ImageOptions.Image")));
-            this.lbExit.Location = new System.Drawing.Point(1353, 42);
+            this.lbExit.Location = new System.Drawing.Point(1344, 34);
+            this.lbExit.Margin = new System.Windows.Forms.Padding(5);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(134, 36);
+            this.lbExit.Size = new System.Drawing.Size(152, 36);
             this.lbExit.TabIndex = 2;
             this.lbExit.Text = "Card Return";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
@@ -258,7 +259,7 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnAccountSetting);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(732, 155);
+            this.panel1.Location = new System.Drawing.Point(804, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(604, 392);
             this.panel1.TabIndex = 18;
@@ -305,7 +306,7 @@ namespace ATM_Machine_Transaction
             this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.labelControl2);
-            this.panel2.Location = new System.Drawing.Point(732, 609);
+            this.panel2.Location = new System.Drawing.Point(804, 614);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(604, 67);
             this.panel2.TabIndex = 19;
