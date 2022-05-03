@@ -41,7 +41,7 @@ namespace ATM_Machine_Transaction
             this.button2 = new System.Windows.Forms.Button();
             this.btnAccountSetting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCashTransfer = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -52,8 +52,10 @@ namespace ATM_Machine_Transaction
             this.checkBoxKhmer = new System.Windows.Forms.CheckBox();
             this.checkBoxEnglish = new System.Windows.Forms.CheckBox();
             this.labelSaving = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,11 +73,11 @@ namespace ATM_Machine_Transaction
             // lbExit
             // 
             this.lbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbExit.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lbExit.Appearance.Options.UseFont = true;
             this.lbExit.Appearance.Options.UseForeColor = true;
-            this.lbExit.AppearanceHovered.Font = new System.Drawing.Font("Microsoft YaHei UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lbExit.AppearanceHovered.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.AppearanceHovered.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.lbExit.AppearanceHovered.ForeColor = System.Drawing.Color.White;
             this.lbExit.AppearanceHovered.Options.UseFont = true;
@@ -87,7 +89,7 @@ namespace ATM_Machine_Transaction
             this.lbExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lbExit.ImageOptions.Image")));
             this.lbExit.Location = new System.Drawing.Point(1353, 42);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(134, 36);
+            this.lbExit.Size = new System.Drawing.Size(152, 36);
             this.lbExit.TabIndex = 2;
             this.lbExit.Text = "Card Return";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
@@ -136,9 +138,9 @@ namespace ATM_Machine_Transaction
             this.labelAccount.ForeColor = System.Drawing.Color.LimeGreen;
             this.labelAccount.Location = new System.Drawing.Point(201, 269);
             this.labelAccount.Name = "labelAccount";
-            this.labelAccount.Size = new System.Drawing.Size(117, 25);
+            this.labelAccount.Size = new System.Drawing.Size(84, 25);
             this.labelAccount.TabIndex = 6;
-            this.labelAccount.Text = "Account #1";
+            this.labelAccount.Text = "Balance";
             // 
             // label7
             // 
@@ -216,21 +218,21 @@ namespace ATM_Machine_Transaction
             this.button4.Text = "Other";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnCashTransfer
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button5.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(318, 141);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(288, 112);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Credit Card";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCashTransfer.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnCashTransfer.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnCashTransfer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCashTransfer.FlatAppearance.BorderSize = 0;
+            this.btnCashTransfer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCashTransfer.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCashTransfer.ForeColor = System.Drawing.Color.White;
+            this.btnCashTransfer.Location = new System.Drawing.Point(318, 141);
+            this.btnCashTransfer.Name = "btnCashTransfer";
+            this.btnCashTransfer.Size = new System.Drawing.Size(288, 112);
+            this.btnCashTransfer.TabIndex = 16;
+            this.btnCashTransfer.Text = "Cash Transfer";
+            this.btnCashTransfer.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -255,7 +257,7 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnCashTransfer);
             this.panel1.Controls.Add(this.btnAccountSetting);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Location = new System.Drawing.Point(732, 155);
@@ -395,6 +397,19 @@ namespace ATM_Machine_Transaction
             this.labelSaving.TabIndex = 8;
             this.labelSaving.Text = "Saving #2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(227, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -403,6 +418,7 @@ namespace ATM_Machine_Transaction
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBoxEnglish);
             this.Controls.Add(this.checkBoxKhmer);
             this.Controls.Add(this.panel2);
@@ -427,6 +443,7 @@ namespace ATM_Machine_Transaction
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,7 +462,7 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnAccountSetting;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCashTransfer;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
@@ -456,6 +473,7 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.CheckBox checkBoxKhmer;
         private System.Windows.Forms.CheckBox checkBoxEnglish;
         private System.Windows.Forms.Label labelSaving;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

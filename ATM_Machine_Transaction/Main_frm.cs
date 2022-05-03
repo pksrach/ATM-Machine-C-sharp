@@ -43,7 +43,6 @@ namespace ATM_Machine_Transaction
                 checkBoxKhmer.Checked = false;
                 checkBoxKhmer.AutoCheck = true;
 
-                
                 labelWelcome.Font = new Font("Microsoft YaHei UI", 14);
                 labelWelcome.Text = "Welcome";
             }
@@ -64,7 +63,7 @@ namespace ATM_Machine_Transaction
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
             AccountSetting frm = new AccountSetting();
-            frm.Show();
+            frm.ShowDialog();
         }
     }//
 }///
