@@ -104,3 +104,4 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transac
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe.licenses
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CoreCompileInputs.cache
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CopyComplete
+D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources

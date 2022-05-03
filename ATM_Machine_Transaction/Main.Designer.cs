@@ -39,7 +39,7 @@ namespace ATM_Machine_Transaction
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAccountSetting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -183,21 +183,22 @@ namespace ATM_Machine_Transaction
             this.button2.Text = "Payments";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnAccountSetting
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 276);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(288, 112);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Account Setting";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAccountSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAccountSetting.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAccountSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccountSetting.FlatAppearance.BorderSize = 0;
+            this.btnAccountSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountSetting.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSetting.ForeColor = System.Drawing.Color.White;
+            this.btnAccountSetting.Location = new System.Drawing.Point(0, 276);
+            this.btnAccountSetting.Name = "btnAccountSetting";
+            this.btnAccountSetting.Size = new System.Drawing.Size(288, 112);
+            this.btnAccountSetting.TabIndex = 14;
+            this.btnAccountSetting.Text = "Account Setting";
+            this.btnAccountSetting.UseVisualStyleBackColor = false;
+            this.btnAccountSetting.Click += new System.EventHandler(this.btnAccountSetting_Click);
             // 
             // button4
             // 
@@ -255,7 +256,7 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnAccountSetting);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Location = new System.Drawing.Point(732, 155);
             this.panel1.Name = "panel1";
@@ -398,7 +399,7 @@ namespace ATM_Machine_Transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1540, 845);
@@ -442,7 +443,7 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAccountSetting;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

@@ -60,5 +60,11 @@ namespace ATM_Machine_Transaction
                 labelWelcome.Text = "សូមស្វាគមន៍";
             }
         }
+
+        private void btnAccountSetting_Click(object sender, EventArgs e)
+        {
+            AccountSetting frm = new AccountSetting();
+            frm.Show();
+        }
     }//
 }///
