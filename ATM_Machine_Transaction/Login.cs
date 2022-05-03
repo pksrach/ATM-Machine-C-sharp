@@ -77,7 +77,7 @@ namespace ATM_Machine_Transaction
 
         private void btnRmv_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void txtPIN_TextChanged(object sender, EventArgs e)

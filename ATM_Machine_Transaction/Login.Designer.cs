@@ -67,12 +67,8 @@ namespace ATM_Machine_Transaction
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-
-            this.pictureBox1.Location = new System.Drawing.Point(2068, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(1797, 24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-
-            this.pictureBox1.Location = new System.Drawing.Point(1556, 24);
-
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,13 +87,8 @@ namespace ATM_Machine_Transaction
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
-
-            this.btn1.Location = new System.Drawing.Point(49, 233);
-            this.btn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn1.Location = new System.Drawing.Point(466, 287);
+            this.btn1.Location = new System.Drawing.Point(7, 161);
             this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(76, 69);
             this.btn1.TabIndex = 3;
@@ -114,13 +105,8 @@ namespace ATM_Machine_Transaction
             this.txtPIN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-
-            this.txtPIN.Location = new System.Drawing.Point(49, 31);
-            this.txtPIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.txtPIN.Location = new System.Drawing.Point(466, 123);
+            this.txtPIN.Location = new System.Drawing.Point(7, 19);
             this.txtPIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.txtPIN.Name = "txtPIN";
             this.txtPIN.PasswordChar = '*';
             this.txtPIN.Size = new System.Drawing.Size(438, 80);
@@ -140,13 +126,8 @@ namespace ATM_Machine_Transaction
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.White;
-
-            this.btn2.Location = new System.Drawing.Point(289, 233);
-            this.btn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn2.Location = new System.Drawing.Point(646, 287);
+            this.btn2.Location = new System.Drawing.Point(187, 161);
             this.btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(76, 69);
             this.btn2.TabIndex = 5;
@@ -170,13 +151,8 @@ namespace ATM_Machine_Transaction
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.White;
-
-            this.btn3.Location = new System.Drawing.Point(531, 233);
-            this.btn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn3.Location = new System.Drawing.Point(827, 287);
+            this.btn3.Location = new System.Drawing.Point(368, 161);
             this.btn3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(76, 69);
             this.btn3.TabIndex = 6;
@@ -200,13 +176,8 @@ namespace ATM_Machine_Transaction
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.White;
-
-            this.btn6.Location = new System.Drawing.Point(531, 369);
-            this.btn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn6.Location = new System.Drawing.Point(827, 398);
+            this.btn6.Location = new System.Drawing.Point(368, 273);
             this.btn6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(76, 69);
             this.btn6.TabIndex = 9;
@@ -230,13 +201,8 @@ namespace ATM_Machine_Transaction
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.White;
-
-            this.btn5.Location = new System.Drawing.Point(289, 369);
-            this.btn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn5.Location = new System.Drawing.Point(646, 398);
+            this.btn5.Location = new System.Drawing.Point(187, 273);
             this.btn5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(76, 69);
             this.btn5.TabIndex = 8;
@@ -260,13 +226,8 @@ namespace ATM_Machine_Transaction
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.White;
-
-            this.btn4.Location = new System.Drawing.Point(49, 369);
-            this.btn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn4.Location = new System.Drawing.Point(466, 398);
+            this.btn4.Location = new System.Drawing.Point(7, 273);
             this.btn4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(76, 69);
             this.btn4.TabIndex = 7;
@@ -290,13 +251,8 @@ namespace ATM_Machine_Transaction
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.White;
-
-            this.btn9.Location = new System.Drawing.Point(531, 492);
-            this.btn9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn9.Location = new System.Drawing.Point(827, 498);
+            this.btn9.Location = new System.Drawing.Point(368, 373);
             this.btn9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(76, 69);
             this.btn9.TabIndex = 12;
@@ -320,13 +276,8 @@ namespace ATM_Machine_Transaction
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.White;
-
-            this.btn8.Location = new System.Drawing.Point(289, 492);
-            this.btn8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn8.Location = new System.Drawing.Point(646, 498);
+            this.btn8.Location = new System.Drawing.Point(187, 373);
             this.btn8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(76, 69);
             this.btn8.TabIndex = 11;
@@ -350,13 +301,8 @@ namespace ATM_Machine_Transaction
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.White;
-
-            this.btn7.Location = new System.Drawing.Point(49, 492);
-            this.btn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn7.Location = new System.Drawing.Point(466, 498);
+            this.btn7.Location = new System.Drawing.Point(7, 373);
             this.btn7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(76, 69);
             this.btn7.TabIndex = 10;
@@ -380,13 +326,8 @@ namespace ATM_Machine_Transaction
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.Color.White;
-
-            this.btn0.Location = new System.Drawing.Point(289, 610);
-            this.btn0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
-            this.btn0.Location = new System.Drawing.Point(646, 594);
+            this.btn0.Location = new System.Drawing.Point(187, 469);
             this.btn0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(76, 69);
             this.btn0.TabIndex = 14;
@@ -410,17 +351,10 @@ namespace ATM_Machine_Transaction
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClr.ForeColor = System.Drawing.Color.White;
-
-            this.btnClr.Location = new System.Drawing.Point(1620, 473);
-            this.btnClr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClr.Name = "btnClr";
-            this.btnClr.Size = new System.Drawing.Size(277, 110);
-
-            this.btnClr.Location = new System.Drawing.Point(1215, 287);
+            this.btnClr.Location = new System.Drawing.Point(1078, 313);
             this.btnClr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(157, 53);
-
             this.btnClr.TabIndex = 15;
             this.btnClr.Text = "CLEAR";
             this.btnClr.UseVisualStyleBackColor = false;
@@ -438,17 +372,10 @@ namespace ATM_Machine_Transaction
             this.btnRmv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRmv.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRmv.ForeColor = System.Drawing.Color.White;
-
-            this.btnRmv.Location = new System.Drawing.Point(1620, 609);
-            this.btnRmv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRmv.Name = "btnRmv";
-            this.btnRmv.Size = new System.Drawing.Size(277, 110);
-
-            this.btnRmv.Location = new System.Drawing.Point(1215, 398);
+            this.btnRmv.Location = new System.Drawing.Point(1078, 422);
             this.btnRmv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRmv.Name = "btnRmv";
             this.btnRmv.Size = new System.Drawing.Size(157, 53);
-
             this.btnRmv.TabIndex = 16;
             this.btnRmv.Text = "RETURN";
             this.btnRmv.UseVisualStyleBackColor = false;
@@ -456,9 +383,7 @@ namespace ATM_Machine_Transaction
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btn0);
             this.panel1.Controls.Add(this.btn1);
@@ -471,10 +396,10 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.btn4);
             this.panel1.Controls.Add(this.btn6);
             this.panel1.Controls.Add(this.btn5);
-            this.panel1.Location = new System.Drawing.Point(612, 129);
+            this.panel1.Location = new System.Drawing.Point(495, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 720);
+            this.panel1.Size = new System.Drawing.Size(454, 544);
             this.panel1.TabIndex = 17;
             // 
             // Login
@@ -483,11 +408,7 @@ namespace ATM_Machine_Transaction
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
-            this.ClientSize = new System.Drawing.Size(1912, 884);
-
-            this.ClientSize = new System.Drawing.Size(1439, 718);
-
+            this.ClientSize = new System.Drawing.Size(1408, 663);
             this.Controls.Add(this.btnRmv);
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.pictureBox1);
@@ -495,10 +416,7 @@ namespace ATM_Machine_Transaction
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-
-
             this.Name = "Login";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
