@@ -16,7 +16,7 @@ namespace ATM_Machine_Transaction
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_frm());
+            Application.Run(new Login());
         }
     }
 }
