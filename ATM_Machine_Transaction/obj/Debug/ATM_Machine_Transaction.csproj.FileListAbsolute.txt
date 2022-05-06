@@ -116,6 +116,25 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transac
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe.licenses
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CoreCompileInputs.cache
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CopyComplete
+
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.pdb
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csprojAssemblyReference.cache
+
+D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.exe.config
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.exe
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.pdb
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.AssemblyReference.cache
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.SuggestedBindingRedirects.cache
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Login.resources
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_frm.resources
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Properties.Resources.resources
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.GenerateResource.cache
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe.licenses
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CoreCompileInputs.cache
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CopyComplete
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.pdb
+D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources
+
