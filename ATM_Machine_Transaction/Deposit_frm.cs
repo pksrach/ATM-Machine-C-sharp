@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ATM_Machine_Transaction
 {
-    public partial class AccountSetting : Form
+    public partial class Deposit_frm : Form
     {
-        public AccountSetting()
+        public Deposit_frm()
         {
             InitializeComponent();
         }
@@ -22,11 +22,6 @@ namespace ATM_Machine_Transaction
             Main_frm frm = new Main_frm();
             frm.Show();
             this.Hide();
-        }
-
-        private void AccountSetting_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -45,7 +45,9 @@ namespace ATM_Machine_Transaction
             this.btn0 = new System.Windows.Forms.Button();
             this.btnClr = new System.Windows.Forms.Button();
             this.btnRmv = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +67,8 @@ namespace ATM_Machine_Transaction
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1556, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(1797, 24);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,29 +77,36 @@ namespace ATM_Machine_Transaction
             // 
             // btn1
             // 
+            this.btn1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn1.BackColor = System.Drawing.Color.Transparent;
-            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn1.FlatAppearance.BorderSize = 0;
-            this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
-            this.btn1.Location = new System.Drawing.Point(466, 287);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1.Location = new System.Drawing.Point(7, 161);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(76, 69);
             this.btn1.TabIndex = 3;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn1.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn1.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // txtPIN
             // 
+            this.txtPIN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.txtPIN.Location = new System.Drawing.Point(466, 123);
-            this.txtPIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPIN.Location = new System.Drawing.Point(7, 19);
+            this.txtPIN.Margin = new System.Windows.Forms.Padding(2);
             this.txtPIN.Name = "txtPIN";
             this.txtPIN.PasswordChar = '*';
             this.txtPIN.Size = new System.Drawing.Size(438, 80);
@@ -106,178 +116,234 @@ namespace ATM_Machine_Transaction
             // 
             // btn2
             // 
+            this.btn2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn2.BackColor = System.Drawing.Color.Transparent;
-            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn2.FlatAppearance.BorderSize = 0;
-            this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.White;
-            this.btn2.Location = new System.Drawing.Point(646, 287);
-            this.btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn2.Location = new System.Drawing.Point(187, 161);
+            this.btn2.Margin = new System.Windows.Forms.Padding(2);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(76, 69);
             this.btn2.TabIndex = 5;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn2.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn2.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn3
             // 
+            this.btn3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn3.BackColor = System.Drawing.Color.Transparent;
-            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.White;
-            this.btn3.Location = new System.Drawing.Point(827, 287);
-            this.btn3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn3.Location = new System.Drawing.Point(368, 161);
+            this.btn3.Margin = new System.Windows.Forms.Padding(2);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(76, 69);
             this.btn3.TabIndex = 6;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn3.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn3.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn6
             // 
+            this.btn6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn6.BackColor = System.Drawing.Color.Transparent;
-            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn6.FlatAppearance.BorderSize = 0;
-            this.btn6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.White;
-            this.btn6.Location = new System.Drawing.Point(827, 398);
-            this.btn6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn6.Location = new System.Drawing.Point(368, 273);
+            this.btn6.Margin = new System.Windows.Forms.Padding(2);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(76, 69);
             this.btn6.TabIndex = 9;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn6.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn6.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn5
             // 
+            this.btn5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn5.BackColor = System.Drawing.Color.Transparent;
-            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn5.FlatAppearance.BorderSize = 0;
-            this.btn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.White;
-            this.btn5.Location = new System.Drawing.Point(646, 398);
-            this.btn5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn5.Location = new System.Drawing.Point(187, 273);
+            this.btn5.Margin = new System.Windows.Forms.Padding(2);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(76, 69);
             this.btn5.TabIndex = 8;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn5.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn5.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn4
             // 
+            this.btn4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn4.BackColor = System.Drawing.Color.Transparent;
-            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn4.FlatAppearance.BorderSize = 0;
-            this.btn4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.White;
-            this.btn4.Location = new System.Drawing.Point(466, 398);
-            this.btn4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn4.Location = new System.Drawing.Point(7, 273);
+            this.btn4.Margin = new System.Windows.Forms.Padding(2);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(76, 69);
             this.btn4.TabIndex = 7;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn4.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn4.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn9
             // 
+            this.btn9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn9.BackColor = System.Drawing.Color.Transparent;
-            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn9.FlatAppearance.BorderSize = 0;
-            this.btn9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.White;
-            this.btn9.Location = new System.Drawing.Point(827, 498);
-            this.btn9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn9.Location = new System.Drawing.Point(368, 373);
+            this.btn9.Margin = new System.Windows.Forms.Padding(2);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(76, 69);
             this.btn9.TabIndex = 12;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn9.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn9.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn8
             // 
+            this.btn8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn8.BackColor = System.Drawing.Color.Transparent;
-            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn8.FlatAppearance.BorderSize = 0;
-            this.btn8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.White;
-            this.btn8.Location = new System.Drawing.Point(646, 498);
-            this.btn8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn8.Location = new System.Drawing.Point(187, 373);
+            this.btn8.Margin = new System.Windows.Forms.Padding(2);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(76, 69);
             this.btn8.TabIndex = 11;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn8.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn8.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn7
             // 
+            this.btn7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn7.BackColor = System.Drawing.Color.Transparent;
-            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn7.FlatAppearance.BorderSize = 0;
-            this.btn7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.White;
-            this.btn7.Location = new System.Drawing.Point(466, 498);
-            this.btn7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn7.Location = new System.Drawing.Point(7, 373);
+            this.btn7.Margin = new System.Windows.Forms.Padding(2);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(76, 69);
             this.btn7.TabIndex = 10;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn7.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn7.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btn0
             // 
+            this.btn0.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn0.BackColor = System.Drawing.Color.Transparent;
-            this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn0.FlatAppearance.BorderSize = 0;
-            this.btn0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
-            this.btn0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btn0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.Color.White;
-            this.btn0.Location = new System.Drawing.Point(646, 594);
-            this.btn0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn0.Location = new System.Drawing.Point(187, 469);
+            this.btn0.Margin = new System.Windows.Forms.Padding(2);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(76, 69);
             this.btn0.TabIndex = 14;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.btn0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.btn0.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.btn0.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // btnClr
             // 
+            this.btnClr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClr.BackColor = System.Drawing.Color.LightGreen;
+            this.btnClr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
             this.btnClr.FlatAppearance.BorderSize = 0;
             this.btnClr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
@@ -285,8 +351,8 @@ namespace ATM_Machine_Transaction
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClr.ForeColor = System.Drawing.Color.White;
-            this.btnClr.Location = new System.Drawing.Point(1215, 287);
-            this.btnClr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClr.Location = new System.Drawing.Point(1078, 313);
+            this.btnClr.Margin = new System.Windows.Forms.Padding(2);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(157, 53);
             this.btnClr.TabIndex = 15;
@@ -296,7 +362,9 @@ namespace ATM_Machine_Transaction
             // 
             // btnRmv
             // 
+            this.btnRmv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRmv.BackColor = System.Drawing.Color.LightGreen;
+            this.btnRmv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRmv.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
             this.btnRmv.FlatAppearance.BorderSize = 0;
             this.btnRmv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -304,14 +372,35 @@ namespace ATM_Machine_Transaction
             this.btnRmv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRmv.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRmv.ForeColor = System.Drawing.Color.White;
-            this.btnRmv.Location = new System.Drawing.Point(1215, 398);
-            this.btnRmv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRmv.Location = new System.Drawing.Point(1078, 422);
+            this.btnRmv.Margin = new System.Windows.Forms.Padding(2);
             this.btnRmv.Name = "btnRmv";
             this.btnRmv.Size = new System.Drawing.Size(157, 53);
             this.btnRmv.TabIndex = 16;
-            this.btnRmv.Text = "REMOVE";
+            this.btnRmv.Text = "RETURN";
             this.btnRmv.UseVisualStyleBackColor = false;
             this.btnRmv.Click += new System.EventHandler(this.btnRmv_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btn0);
+            this.panel1.Controls.Add(this.btn1);
+            this.panel1.Controls.Add(this.txtPIN);
+            this.panel1.Controls.Add(this.btn9);
+            this.panel1.Controls.Add(this.btn2);
+            this.panel1.Controls.Add(this.btn8);
+            this.panel1.Controls.Add(this.btn3);
+            this.panel1.Controls.Add(this.btn7);
+            this.panel1.Controls.Add(this.btn4);
+            this.panel1.Controls.Add(this.btn6);
+            this.panel1.Controls.Add(this.btn5);
+            this.panel1.Location = new System.Drawing.Point(495, 89);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(454, 544);
+            this.panel1.TabIndex = 17;
             // 
             // Login
             // 
@@ -319,29 +408,22 @@ namespace ATM_Machine_Transaction
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1439, 718);
+            this.ClientSize = new System.Drawing.Size(1408, 663);
             this.Controls.Add(this.btnRmv);
             this.Controls.Add(this.btnClr);
-            this.Controls.Add(this.btn0);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.txtPIN);
-            this.Controls.Add(this.btn1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,5 +446,6 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.Button btnRmv;
+        private System.Windows.Forms.Panel panel1;
     }
 }

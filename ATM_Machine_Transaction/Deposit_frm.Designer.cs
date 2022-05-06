@@ -1,7 +1,7 @@
 ﻿
 namespace ATM_Machine_Transaction
 {
-    partial class AccountSetting
+    partial class Deposit_frm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@ namespace ATM_Machine_Transaction
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountSetting));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deposit_frm));
             this.label1 = new System.Windows.Forms.Label();
             this.lbExit = new DevExpress.XtraEditors.LabelControl();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -44,9 +44,9 @@ namespace ATM_Machine_Transaction
             this.label1.Location = new System.Drawing.Point(46, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 28);
+            this.label1.Size = new System.Drawing.Size(94, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Account Setting";
+            this.label1.Text = "Deposit";
             // 
             // lbExit
             // 
@@ -71,14 +71,18 @@ namespace ATM_Machine_Transaction
             this.lbExit.Text = "Return";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
-            // textBox1
+            // label2
             // 
-            this.textBox1.Location = new System.Drawing.Point(233, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 28);
-            this.textBox1.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(519, 285);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 35);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Deposit";
             // 
-            // AccountSetting
+            // Deposit_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,7 +91,7 @@ namespace ATM_Machine_Transaction
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1192, 652);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -97,10 +101,10 @@ namespace ATM_Machine_Transaction
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AccountSetting";
+            this.Name = "Deposit_frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AccountSetting_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +114,6 @@ namespace ATM_Machine_Transaction
 
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.LabelControl lbExit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

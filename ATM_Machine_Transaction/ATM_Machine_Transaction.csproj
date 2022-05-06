@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Deposit_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit_frm.Designer.cs">
+      <DependentUpon>Deposit_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AccountSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main_Form_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form_1.Designer.cs">
+      <DependentUpon>Main_Form_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +86,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Deposit_frm.resx">
+      <DependentUpon>Deposit_frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AccountSetting.resx">
       <DependentUpon>AccountSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form_1.resx">
+      <DependentUpon>Main_Form_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_frm.resx">
       <DependentUpon>Main_frm.cs</DependentUpon>

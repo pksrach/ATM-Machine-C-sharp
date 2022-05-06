@@ -18,7 +18,7 @@ namespace ATM_Machine_Transaction
         }
         private void Login_Load(object sender, EventArgs e)
         {
-
+            txtPIN.Focus();
         }
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -72,26 +72,54 @@ namespace ATM_Machine_Transaction
         private void btnClr_Click(object sender, EventArgs e)
         {
             txtPIN.Clear();
+            txtPIN.Focus();
         }
 
         private void btnRmv_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void txtPIN_TextChanged(object sender, EventArgs e)
         {
-            if(txtPIN.Text.Count() >= 4)
+            if (txtPIN.Text.Count() >= 4)
             {
-                if (txtPIN.Text == "3322") {
-                MessageBox.Show("Successfully", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (txtPIN.Text == "3322")
+                {
+                    MessageBox.Show("Successfully", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPIN.Clear();
+                    //Main_frm frm = new Main_frm();
+                    Main_Form_1 frm = new Main_Form_1();
+                    frm.Show();
+                    this.Hide();
                 }
-                else{ 
-                MessageBox.Show("Incorrect", "Try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    MessageBox.Show("Incorrect", "Try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtPIN.Clear();
                 }
             }
+        }
+        private void myEventHover(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.ForeColor = Color.Black;
+        }
+        private void myEventLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.ForeColor = Color.White;
+        }
+        private void myEventClick(object sender, MouseEventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.ForeColor = Color.Black;
+        }
+
+        private void myEventDown(object sender, MouseEventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.ForeColor = Color.DarkGray;
         }
     }
 }

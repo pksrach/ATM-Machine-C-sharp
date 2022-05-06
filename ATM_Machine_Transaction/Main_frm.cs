@@ -19,7 +19,10 @@ namespace ATM_Machine_Transaction
 
         private void lbExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            Login frm = new Login();
+            frm.Show();
+            this.Hide();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -63,7 +66,15 @@ namespace ATM_Machine_Transaction
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
             AccountSetting frm = new AccountSetting();
-            frm.ShowDialog();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnDiposit_Click(object sender, EventArgs e)
+        {
+            Deposit_frm frm = new Deposit_frm();
+            frm.Show();
+            this.Hide();
         }
     }//
 }///
