@@ -42,7 +42,7 @@ namespace ATM_Machine_Transaction
             this.btnAccountSetting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnCashTransfer = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnDiposit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.label3 = new System.Windows.Forms.Label();
@@ -183,7 +183,7 @@ namespace ATM_Machine_Transaction
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(288, 112);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Payments";
+            this.button2.Text = "Payment";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // btnAccountSetting
@@ -235,21 +235,22 @@ namespace ATM_Machine_Transaction
             this.btnCashTransfer.Text = "Cash Transfer";
             this.btnCashTransfer.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnDiposit
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(318, 5);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(288, 112);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Diposit";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDiposit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDiposit.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnDiposit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDiposit.FlatAppearance.BorderSize = 0;
+            this.btnDiposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiposit.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiposit.ForeColor = System.Drawing.Color.White;
+            this.btnDiposit.Location = new System.Drawing.Point(318, 5);
+            this.btnDiposit.Name = "btnDiposit";
+            this.btnDiposit.Size = new System.Drawing.Size(288, 112);
+            this.btnDiposit.TabIndex = 15;
+            this.btnDiposit.Text = "Deposit";
+            this.btnDiposit.UseVisualStyleBackColor = false;
+            this.btnDiposit.Click += new System.EventHandler(this.btnDiposit_Click);
             // 
             // panel1
             // 
@@ -260,7 +261,7 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnCashTransfer);
             this.panel1.Controls.Add(this.btnAccountSetting);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnDiposit);
             this.panel1.Location = new System.Drawing.Point(804, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(604, 392);
@@ -464,7 +465,7 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Button btnAccountSetting;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnCashTransfer;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnDiposit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.LabelControl labelControl1;

@@ -66,7 +66,15 @@ namespace ATM_Machine_Transaction
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
             AccountSetting frm = new AccountSetting();
-            frm.ShowDialog();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnDiposit_Click(object sender, EventArgs e)
+        {
+            Deposit_frm frm = new Deposit_frm();
+            frm.Show();
+            this.Hide();
         }
     }//
 }///

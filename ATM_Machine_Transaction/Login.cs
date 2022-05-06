@@ -88,7 +88,8 @@ namespace ATM_Machine_Transaction
                 {
                     MessageBox.Show("Successfully", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPIN.Clear();
-                    Main_frm frm = new Main_frm();
+                    //Main_frm frm = new Main_frm();
+                    Main_Form_1 frm = new Main_Form_1();
                     frm.Show();
                     this.Hide();
                 }
