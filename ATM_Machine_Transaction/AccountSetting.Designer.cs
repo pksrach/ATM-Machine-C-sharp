@@ -69,6 +69,7 @@ namespace ATM_Machine_Transaction
             this.lbExit.Size = new System.Drawing.Size(64, 26);
             this.lbExit.TabIndex = 3;
             this.lbExit.Text = "Return";
+            this.lbExit.Visible = false;
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
             // textBox1

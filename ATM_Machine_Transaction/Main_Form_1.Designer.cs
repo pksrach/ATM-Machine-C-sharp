@@ -29,19 +29,33 @@ namespace ATM_Machine_Transaction
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form_1));
             this.panel_ShowForm = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnReturn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDeposit = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnWithdraw = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnBalance = new System.Windows.Forms.Button();
             this.btnAccountSetting = new System.Windows.Forms.Button();
+            this.lbTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbDate = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbCustomerName = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.labelAccount = new System.Windows.Forms.Label();
+            this.lbBalance = new System.Windows.Forms.Label();
+            this.lbAccountNumber = new System.Windows.Forms.Label();
+            this.labelSaving = new System.Windows.Forms.Label();
+            this.panel_ShowForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ShowForm
@@ -49,11 +63,26 @@ namespace ATM_Machine_Transaction
             this.panel_ShowForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ShowForm.Location = new System.Drawing.Point(211, 129);
+            this.panel_ShowForm.BackColor = System.Drawing.Color.White;
+            this.panel_ShowForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_ShowForm.Controls.Add(this.label2);
+            this.panel_ShowForm.Location = new System.Drawing.Point(301, 129);
             this.panel_ShowForm.Name = "panel_ShowForm";
-            this.panel_ShowForm.Size = new System.Drawing.Size(924, 457);
+            this.panel_ShowForm.Size = new System.Drawing.Size(834, 582);
             this.panel_ShowForm.TabIndex = 0;
-            this.panel_ShowForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(834, 582);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "WELCOME";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -62,9 +91,9 @@ namespace ATM_Machine_Transaction
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Location = new System.Drawing.Point(200, 116);
+            this.panel1.Location = new System.Drawing.Point(290, 116);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(947, 481);
+            this.panel1.Size = new System.Drawing.Size(855, 606);
             this.panel1.TabIndex = 1;
             // 
             // btnReturn
@@ -74,13 +103,15 @@ namespace ATM_Machine_Transaction
             this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReturn.FlatAppearance.BorderSize = 0;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.ForeColor = System.Drawing.Color.White;
-            this.btnReturn.Location = new System.Drawing.Point(1172, 643);
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(1173, 748);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(180, 80);
             this.btnReturn.TabIndex = 13;
-            this.btnReturn.Text = "RETURN";
+            this.btnReturn.Text = "Return";
+            this.btnReturn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -89,10 +120,10 @@ namespace ATM_Machine_Transaction
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1252, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(1263, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -101,11 +132,11 @@ namespace ATM_Machine_Transaction
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 70);
+            this.label1.Size = new System.Drawing.Size(179, 80);
             this.label1.TabIndex = 22;
             this.label1.Text = "ATM";
             // 
@@ -116,31 +147,36 @@ namespace ATM_Machine_Transaction
             this.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeposit.FlatAppearance.BorderSize = 0;
             this.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeposit.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeposit.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.Color.White;
-            this.btnDeposit.Location = new System.Drawing.Point(1172, 222);
+            this.btnDeposit.Image = ((System.Drawing.Image)(resources.GetObject("btnDeposit.Image")));
+            this.btnDeposit.Location = new System.Drawing.Point(1173, 222);
             this.btnDeposit.Name = "btnDeposit";
             this.btnDeposit.Size = new System.Drawing.Size(180, 80);
             this.btnDeposit.TabIndex = 24;
-            this.btnDeposit.Text = "DEPOSIT";
+            this.btnDeposit.Text = "Deposit";
+            this.btnDeposit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDeposit.UseVisualStyleBackColor = false;
             this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
-            // button3
+            // btnWithdraw
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1172, 328);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 80);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "WITHDRAW";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnWithdraw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnWithdraw.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWithdraw.FlatAppearance.BorderSize = 0;
+            this.btnWithdraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWithdraw.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWithdraw.ForeColor = System.Drawing.Color.White;
+            this.btnWithdraw.Image = ((System.Drawing.Image)(resources.GetObject("btnWithdraw.Image")));
+            this.btnWithdraw.Location = new System.Drawing.Point(1173, 328);
+            this.btnWithdraw.Name = "btnWithdraw";
+            this.btnWithdraw.Size = new System.Drawing.Size(180, 80);
+            this.btnWithdraw.TabIndex = 25;
+            this.btnWithdraw.Text = "Withdraw";
+            this.btnWithdraw.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnWithdraw.UseVisualStyleBackColor = false;
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // button4
             // 
@@ -149,13 +185,15 @@ namespace ATM_Machine_Transaction
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1172, 434);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(1173, 434);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(180, 80);
             this.button4.TabIndex = 26;
-            this.button4.Text = "PAYMENT";
+            this.button4.Text = "Transfer";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -165,47 +203,166 @@ namespace ATM_Machine_Transaction
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(1172, 537);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(1173, 537);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(180, 80);
             this.button5.TabIndex = 27;
-            this.button5.Text = "TRANSFER";
+            this.button5.Text = "Payment";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnBalance
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(1172, 116);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(180, 80);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "BALANCE";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBalance.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnBalance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBalance.FlatAppearance.BorderSize = 0;
+            this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBalance.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBalance.ForeColor = System.Drawing.Color.White;
+            this.btnBalance.Image = ((System.Drawing.Image)(resources.GetObject("btnBalance.Image")));
+            this.btnBalance.Location = new System.Drawing.Point(1173, 116);
+            this.btnBalance.Name = "btnBalance";
+            this.btnBalance.Size = new System.Drawing.Size(180, 80);
+            this.btnBalance.TabIndex = 28;
+            this.btnBalance.Text = "Balance";
+            this.btnBalance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBalance.UseVisualStyleBackColor = false;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnAccountSetting
             // 
-            this.btnAccountSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAccountSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAccountSetting.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAccountSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccountSetting.FlatAppearance.BorderSize = 0;
             this.btnAccountSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountSetting.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSetting.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountSetting.ForeColor = System.Drawing.Color.White;
-            this.btnAccountSetting.Location = new System.Drawing.Point(12, 517);
+            this.btnAccountSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSetting.Image")));
+            this.btnAccountSetting.Location = new System.Drawing.Point(1173, 643);
             this.btnAccountSetting.Name = "btnAccountSetting";
             this.btnAccountSetting.Size = new System.Drawing.Size(180, 80);
             this.btnAccountSetting.TabIndex = 29;
             this.btnAccountSetting.Text = "Account Setting";
+            this.btnAccountSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAccountSetting.UseVisualStyleBackColor = false;
             this.btnAccountSetting.Click += new System.EventHandler(this.btnAccountSetting_Click);
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.BackColor = System.Drawing.Color.Transparent;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.White;
+            this.lbTime.Location = new System.Drawing.Point(3, 43);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(133, 31);
+            this.lbTime.TabIndex = 30;
+            this.lbTime.Text = "ShowTime";
+            this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbDate
+            // 
+            this.lbDate.AutoSize = true;
+            this.lbDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.White;
+            this.lbDate.Location = new System.Drawing.Point(3, 0);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(131, 31);
+            this.lbDate.TabIndex = 31;
+            this.lbDate.Text = "ShowDate";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.lbDate);
+            this.panel2.Controls.Add(this.lbTime);
+            this.panel2.Location = new System.Drawing.Point(290, 16);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(313, 74);
+            this.panel2.TabIndex = 32;
+            // 
+            // lbCustomerName
+            // 
+            this.lbCustomerName.AutoSize = true;
+            this.lbCustomerName.BackColor = System.Drawing.Color.Transparent;
+            this.lbCustomerName.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCustomerName.ForeColor = System.Drawing.Color.White;
+            this.lbCustomerName.Location = new System.Drawing.Point(18, 141);
+            this.lbCustomerName.Name = "lbCustomerName";
+            this.lbCustomerName.Size = new System.Drawing.Size(250, 31);
+            this.lbCustomerName.TabIndex = 34;
+            this.lbCustomerName.Text = "Kongsamrach Phan";
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.Color.LimeGreen;
+            this.labelWelcome.Location = new System.Drawing.Point(19, 112);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(98, 25);
+            this.labelWelcome.TabIndex = 33;
+            this.labelWelcome.Text = "Welcome";
+            // 
+            // labelAccount
+            // 
+            this.labelAccount.AutoSize = true;
+            this.labelAccount.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccount.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccount.ForeColor = System.Drawing.Color.LimeGreen;
+            this.labelAccount.Location = new System.Drawing.Point(19, 221);
+            this.labelAccount.Name = "labelAccount";
+            this.labelAccount.Size = new System.Drawing.Size(178, 25);
+            this.labelAccount.TabIndex = 35;
+            this.labelAccount.Text = "Account Number*";
+            // 
+            // lbBalance
+            // 
+            this.lbBalance.AutoSize = true;
+            this.lbBalance.BackColor = System.Drawing.Color.Transparent;
+            this.lbBalance.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBalance.ForeColor = System.Drawing.Color.White;
+            this.lbBalance.Location = new System.Drawing.Point(18, 365);
+            this.lbBalance.Name = "lbBalance";
+            this.lbBalance.Size = new System.Drawing.Size(137, 42);
+            this.lbBalance.TabIndex = 38;
+            this.lbBalance.Text = "$ 1,100";
+            // 
+            // lbAccountNumber
+            // 
+            this.lbAccountNumber.AutoSize = true;
+            this.lbAccountNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lbAccountNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountNumber.ForeColor = System.Drawing.Color.White;
+            this.lbAccountNumber.Location = new System.Drawing.Point(18, 250);
+            this.lbAccountNumber.Name = "lbAccountNumber";
+            this.lbAccountNumber.Size = new System.Drawing.Size(163, 31);
+            this.lbAccountNumber.TabIndex = 36;
+            this.lbAccountNumber.Text = "002 289 928";
+            // 
+            // labelSaving
+            // 
+            this.labelSaving.AutoSize = true;
+            this.labelSaving.BackColor = System.Drawing.Color.Transparent;
+            this.labelSaving.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaving.ForeColor = System.Drawing.Color.LimeGreen;
+            this.labelSaving.Location = new System.Drawing.Point(19, 336);
+            this.labelSaving.Name = "labelSaving";
+            this.labelSaving.Size = new System.Drawing.Size(84, 25);
+            this.labelSaving.TabIndex = 37;
+            this.labelSaving.Text = "Balance";
             // 
             // Main_Form_1
             // 
@@ -213,13 +370,20 @@ namespace ATM_Machine_Transaction
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1364, 729);
+            this.ClientSize = new System.Drawing.Size(1374, 854);
             this.ControlBox = false;
             this.Controls.Add(this.btnAccountSetting);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.lbCustomerName);
+            this.Controls.Add(this.labelWelcome);
+            this.Controls.Add(this.labelAccount);
+            this.Controls.Add(this.lbBalance);
+            this.Controls.Add(this.lbAccountNumber);
+            this.Controls.Add(this.labelSaving);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnBalance);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnWithdraw);
             this.Controls.Add(this.btnDeposit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -231,7 +395,11 @@ namespace ATM_Machine_Transaction
             this.Name = "Main_Form_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Main_Form_1_Load);
+            this.panel_ShowForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,10 +413,21 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDeposit;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnWithdraw;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnBalance;
         private System.Windows.Forms.Button btnAccountSetting;
+        private System.Windows.Forms.Label lbTime;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbDate;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbCustomerName;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Label labelAccount;
+        private System.Windows.Forms.Label lbAccountNumber;
+        private System.Windows.Forms.Label labelSaving;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lbBalance;
     }
 }

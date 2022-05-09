@@ -119,9 +119,14 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transac
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.pdb
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csprojAssemblyReference.cache
-
 D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources
-
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Deposit_frm.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_Form_1.resources
-
+D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Withdraw_frm.resources
+D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AlertMessage_frm.resources
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.XtraBars.v20.1.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.XtraBars.v20.1.xml
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll

@@ -38,6 +38,7 @@
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -54,6 +55,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlertMessage_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertMessage_frm.Designer.cs">
+      <DependentUpon>AlertMessage_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsGetData.cs" />
+    <Compile Include="Withdraw_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdraw_frm.Designer.cs">
+      <DependentUpon>Withdraw_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deposit_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +100,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlertMessage_frm.resx">
+      <DependentUpon>AlertMessage_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdraw_frm.resx">
+      <DependentUpon>Withdraw_frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Deposit_frm.resx">
       <DependentUpon>Deposit_frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imgaes\Sample Icon ABA -04.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
