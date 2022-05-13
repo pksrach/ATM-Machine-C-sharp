@@ -18,7 +18,6 @@ namespace ATM_Machine_Transaction
             InitializeComponent();
             this.lbTitle.Text = lb;
             this.lbAlertTitle.Text = title;
-
         }
 
         private void lbExit_Click(object sender, EventArgs e)
@@ -44,5 +43,19 @@ namespace ATM_Machine_Transaction
             }
         }
 
+        private void lbExit_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            
+        }
+
+        private void AlertMessage_frm_KeyDown(object sender, KeyEventArgs e)
+        {
+            //lbExit.Focus();
+            if (e.KeyCode==Keys.Enter)
+            {
+                lbExit_Click(sender, e);
+            }
+        }
     }//
 }///

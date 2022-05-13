@@ -22,7 +22,7 @@ namespace ATM_Machine_Transaction
         {
 
         }
-        Main_Form_1 frmMain = new Main_Form_1();
+       
         private void btnClear_Click(object sender, EventArgs e)
         {
             
@@ -85,7 +85,7 @@ namespace ATM_Machine_Transaction
         {
             if (txtCash.Text != "")
             {
-                txtCash.Text = string.Format("{0:n0}", double.Parse(txtCash.Text));
+                //txtCash.Text = string.Format("{0:n0}", double.Parse(txtCash.Text));
             }
         }
         double cash;
@@ -103,8 +103,6 @@ namespace ATM_Machine_Transaction
                 {
                     AlertMessage = new AlertMessage_frm("Your cash is not enough, Must be big than $10", "Warning");
                     AlertMessage.ShowDialog();
-                    //MessageBox.Show("Your cash is not enough, Must be big than $10", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
                     txtCash.Focus();
                     txtCash.SelectAll();
                     b = true; //clear number for input button number when txtCash is selectAll 
@@ -125,7 +123,9 @@ namespace ATM_Machine_Transaction
             }//else
         }
 
-
-
+        private void txtCash_Validated(object sender, EventArgs e)
+        {
+            
+        }
     }//
 }//

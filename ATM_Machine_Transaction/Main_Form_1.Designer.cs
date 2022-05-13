@@ -73,10 +73,10 @@ namespace ATM_Machine_Transaction
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.SeaGreen;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(834, 582);
@@ -101,7 +101,7 @@ namespace ATM_Machine_Transaction
             this.btnReturn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReturn.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReturn.FlatAppearance.BorderSize = 0;
+            this.btnReturn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.ForeColor = System.Drawing.Color.White;
@@ -113,7 +113,7 @@ namespace ATM_Machine_Transaction
             this.btnReturn.Text = "Return";
             this.btnReturn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnReturn.UseVisualStyleBackColor = false;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            this.btnReturn.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // pictureBox1
             // 
@@ -145,7 +145,7 @@ namespace ATM_Machine_Transaction
             this.btnDeposit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeposit.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeposit.FlatAppearance.BorderSize = 0;
+            this.btnDeposit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeposit.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.Color.White;
@@ -157,14 +157,14 @@ namespace ATM_Machine_Transaction
             this.btnDeposit.Text = "Deposit";
             this.btnDeposit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDeposit.UseVisualStyleBackColor = false;
-            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
+            this.btnDeposit.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // btnWithdraw
             // 
             this.btnWithdraw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWithdraw.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWithdraw.FlatAppearance.BorderSize = 0;
+            this.btnWithdraw.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnWithdraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWithdraw.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWithdraw.ForeColor = System.Drawing.Color.White;
@@ -176,14 +176,14 @@ namespace ATM_Machine_Transaction
             this.btnWithdraw.Text = "Withdraw";
             this.btnWithdraw.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnWithdraw.UseVisualStyleBackColor = false;
-            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
+            this.btnWithdraw.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
@@ -195,13 +195,14 @@ namespace ATM_Machine_Transaction
             this.button4.Text = "Transfer";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
@@ -213,13 +214,14 @@ namespace ATM_Machine_Transaction
             this.button5.Text = "Payment";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // btnBalance
             // 
             this.btnBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBalance.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnBalance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBalance.FlatAppearance.BorderSize = 0;
+            this.btnBalance.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBalance.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBalance.ForeColor = System.Drawing.Color.White;
@@ -231,14 +233,14 @@ namespace ATM_Machine_Transaction
             this.btnBalance.Text = "Balance";
             this.btnBalance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnBalance.UseVisualStyleBackColor = false;
-            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
+            this.btnBalance.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // btnAccountSetting
             // 
             this.btnAccountSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAccountSetting.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAccountSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAccountSetting.FlatAppearance.BorderSize = 0;
+            this.btnAccountSetting.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAccountSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccountSetting.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountSetting.ForeColor = System.Drawing.Color.White;
@@ -250,7 +252,7 @@ namespace ATM_Machine_Transaction
             this.btnAccountSetting.Text = "Account Setting";
             this.btnAccountSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAccountSetting.UseVisualStyleBackColor = false;
-            this.btnAccountSetting.Click += new System.EventHandler(this.btnAccountSetting_Click);
+            this.btnAccountSetting.Click += new System.EventHandler(this.myEventHoverButton);
             // 
             // lbTime
             // 
@@ -330,15 +332,16 @@ namespace ATM_Machine_Transaction
             // 
             // lbBalance
             // 
-            this.lbBalance.AutoSize = true;
             this.lbBalance.BackColor = System.Drawing.Color.Transparent;
-            this.lbBalance.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbBalance.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBalance.ForeColor = System.Drawing.Color.White;
             this.lbBalance.Location = new System.Drawing.Point(18, 365);
             this.lbBalance.Name = "lbBalance";
-            this.lbBalance.Size = new System.Drawing.Size(137, 42);
+            this.lbBalance.Size = new System.Drawing.Size(266, 43);
             this.lbBalance.TabIndex = 38;
-            this.lbBalance.Text = "$ 1,100";
+            this.lbBalance.Text = "$ 100";
+            this.lbBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbAccountNumber
             // 

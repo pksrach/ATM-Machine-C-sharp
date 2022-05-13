@@ -40,15 +40,28 @@ namespace ATM_Machine_Transaction
             this.Hide();
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
+        private void myEventHoverButton(object sender, EventArgs e)
         {
-            myLoadForm(new Deposit_frm());
-        }
-
-        private void btnAccountSetting_Click(object sender, EventArgs e)
-        {
-            myLoadForm(new AccountSetting());
-        }
+            Button button = (Button)sender;
+            if (button.Text == "Return")
+            {
+                Login frm = new Login();
+                frm.Show();
+                this.Hide();
+            }
+            else if (button.Text == "Deposit")
+            {
+                myLoadForm(new Deposit_frm());
+            }
+           else if (button.Text == "Withdraw")
+            {
+                myLoadForm(new Withdraw_frm());
+            }
+            else if (button.Text == "Account Setting")
+            {
+                myLoadForm(new AccountSetting());
+            }
+        }//
 
         private void Main_Form_1_Load(object sender, EventArgs e)
         {
@@ -62,14 +75,5 @@ namespace ATM_Machine_Transaction
             lbBalance.Text = "$ " + String.Format("{0:n0}", clsGetData.Balance);
         }
 
-        private void btnWithdraw_Click(object sender, EventArgs e)
-        {
-            myLoadForm(new Withdraw_frm());
-        }
-
-        private void btnBalance_Click(object sender, EventArgs e)
-        {
-            
-        }
     }//
 }//

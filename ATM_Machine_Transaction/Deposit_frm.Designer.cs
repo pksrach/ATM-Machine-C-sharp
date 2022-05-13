@@ -29,9 +29,7 @@ namespace ATM_Machine_Transaction
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deposit_frm));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtCash = new System.Windows.Forms.TextBox();
             this.btnEnter = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,7 +47,9 @@ namespace ATM_Machine_Transaction
             this.btn4 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,31 +65,17 @@ namespace ATM_Machine_Transaction
             this.label1.TabIndex = 1;
             this.label1.Text = "Deposit";
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(155, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 41);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "$";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // txtCash
             // 
             this.txtCash.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCash.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCash.Location = new System.Drawing.Point(212, 151);
+            this.txtCash.Font = new System.Drawing.Font("Microsoft YaHei UI", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCash.Location = new System.Drawing.Point(99, 61);
             this.txtCash.Name = "txtCash";
-            this.txtCash.Size = new System.Drawing.Size(346, 42);
+            this.txtCash.Size = new System.Drawing.Size(346, 129);
             this.txtCash.TabIndex = 5;
             this.txtCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCash.TextChanged += new System.EventHandler(this.txtCash_TextChanged);
             this.txtCash.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCash_KeyPress);
+            this.txtCash.Validated += new System.EventHandler(this.txtCash_Validated);
             // 
             // btnEnter
             // 
@@ -100,7 +86,7 @@ namespace ATM_Machine_Transaction
             this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.ForeColor = System.Drawing.Color.White;
-            this.btnEnter.Location = new System.Drawing.Point(212, 233);
+            this.btnEnter.Location = new System.Drawing.Point(99, 219);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(150, 50);
             this.btnEnter.TabIndex = 25;
@@ -112,23 +98,24 @@ namespace ATM_Machine_Transaction
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(206, 97);
+            this.label3.Location = new System.Drawing.Point(99, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 35);
+            this.label3.Size = new System.Drawing.Size(346, 35);
             this.label3.TabIndex = 26;
             this.label3.Text = "Deposit Amount";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(17, 527);
+            this.label4.Location = new System.Drawing.Point(5, 433);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 31);
             this.label4.TabIndex = 27;
@@ -136,11 +123,12 @@ namespace ATM_Machine_Transaction
             // 
             // lbTotal
             // 
+            this.lbTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbTotal.BackColor = System.Drawing.Color.Transparent;
             this.lbTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTotal.ForeColor = System.Drawing.Color.White;
-            this.lbTotal.Location = new System.Drawing.Point(212, 522);
+            this.lbTotal.Location = new System.Drawing.Point(200, 428);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(346, 41);
             this.lbTotal.TabIndex = 28;
@@ -156,7 +144,7 @@ namespace ATM_Machine_Transaction
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(408, 233);
+            this.btnClear.Location = new System.Drawing.Point(295, 219);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(150, 50);
             this.btnClear.TabIndex = 29;
@@ -167,6 +155,7 @@ namespace ATM_Machine_Transaction
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btn0);
@@ -179,7 +168,7 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.btn4);
             this.panel1.Controls.Add(this.btn6);
             this.panel1.Controls.Add(this.btn5);
-            this.panel1.Location = new System.Drawing.Point(629, 97);
+            this.panel1.Location = new System.Drawing.Point(535, 7);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 345);
@@ -425,24 +414,33 @@ namespace ATM_Machine_Transaction
             this.btn5.MouseEnter += new System.EventHandler(this.myEventHover);
             this.btn5.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.btnClear);
+            this.panel2.Controls.Add(this.lbTotal);
+            this.panel2.Controls.Add(this.txtCash);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.btnEnter);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(12, 93);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(873, 477);
+            this.panel2.TabIndex = 31;
+            // 
             // Deposit_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1106, 582);
+            this.ClientSize = new System.Drawing.Size(897, 582);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.lbTotal);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnEnter);
-            this.Controls.Add(this.txtCash);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -456,6 +454,8 @@ namespace ATM_Machine_Transaction
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Deposit_frm_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,7 +464,6 @@ namespace ATM_Machine_Transaction
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCash;
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Label label3;
@@ -482,5 +481,6 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Panel panel2;
     }
 }

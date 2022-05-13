@@ -62,6 +62,12 @@
       <DependentUpon>AlertMessage_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="clsGetData.cs" />
+    <Compile Include="ConfirmWithdraw_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmWithdraw_frm.Designer.cs">
+      <DependentUpon>ConfirmWithdraw_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Withdraw_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AlertMessage_frm.resx">
       <DependentUpon>AlertMessage_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmWithdraw_frm.resx">
+      <DependentUpon>ConfirmWithdraw_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Withdraw_frm.resx">
       <DependentUpon>Withdraw_frm.cs</DependentUpon>

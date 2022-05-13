@@ -32,8 +32,8 @@ namespace ATM_Machine_Transaction
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlertMessage_frm));
             this.lbTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbExit = new DevExpress.XtraEditors.LabelControl();
             this.lbAlertTitle = new System.Windows.Forms.Label();
+            this.lbExit = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,18 @@ namespace ATM_Machine_Transaction
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MyMouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MyMouseMove);
             // 
+            // lbAlertTitle
+            // 
+            this.lbAlertTitle.AutoSize = true;
+            this.lbAlertTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbAlertTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAlertTitle.ForeColor = System.Drawing.Color.White;
+            this.lbAlertTitle.Location = new System.Drawing.Point(3, 5);
+            this.lbAlertTitle.Name = "lbAlertTitle";
+            this.lbAlertTitle.Size = new System.Drawing.Size(80, 20);
+            this.lbAlertTitle.TabIndex = 0;
+            this.lbAlertTitle.Text = "Alert Tittle";
+            // 
             // lbExit
             // 
             this.lbExit.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -87,18 +99,7 @@ namespace ATM_Machine_Transaction
             this.lbExit.TabIndex = 27;
             this.lbExit.Text = "OKAY";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
-            // 
-            // lbAlertTitle
-            // 
-            this.lbAlertTitle.AutoSize = true;
-            this.lbAlertTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbAlertTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAlertTitle.ForeColor = System.Drawing.Color.White;
-            this.lbAlertTitle.Location = new System.Drawing.Point(3, 5);
-            this.lbAlertTitle.Name = "lbAlertTitle";
-            this.lbAlertTitle.Size = new System.Drawing.Size(80, 20);
-            this.lbAlertTitle.TabIndex = 0;
-            this.lbAlertTitle.Text = "Alert Tittle";
+            this.lbExit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lbExit_KeyDown);
             // 
             // AlertMessage_frm
             // 
@@ -114,6 +115,7 @@ namespace ATM_Machine_Transaction
             this.Name = "AlertMessage_frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.AlertMessage_frm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AlertMessage_frm_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MyMouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MyMouseMove);
             this.panel1.ResumeLayout(false);

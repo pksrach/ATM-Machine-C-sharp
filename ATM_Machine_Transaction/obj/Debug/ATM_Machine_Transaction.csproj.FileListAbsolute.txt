@@ -130,3 +130,4 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\de\DevExpress.XtraB
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.ConfirmWithdraw_frm.resources

@@ -17,31 +17,20 @@ namespace ATM_Machine_Transaction
             InitializeComponent();
         }
 
-        private void lbExit_Click(object sender, EventArgs e)
+
+        private void myEventButtonMoney(object sender, EventArgs e)
         {
-            
+            Button btn = (Button)sender;
+            //txtCash.Text = btn.Text;
+            ConfirmWithdraw_frm confirmFrm = new ConfirmWithdraw_frm(btn.Text);
+            confirmFrm.ShowDialog();
+            //txtCash.Text.Replace(" ", "$");
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
-            if (txtCash.Text == "") txtCash.Focus();
-
+            ConfirmWithdraw_frm frm = new ConfirmWithdraw_frm("");
+            frm.ShowDialog();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            txtCash.Clear();
-            txtCash.Focus();
-        }
-    }
-}
+    }//
+}///
