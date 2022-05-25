@@ -29,6 +29,7 @@ namespace ATM_Machine_Transaction
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountSetting));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNewPW = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,31 +46,19 @@ namespace ATM_Machine_Transaction
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 50);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Account Setting";
             // 
             // txtNewPW
             // 
-            this.txtNewPW.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNewPW.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPW.Location = new System.Drawing.Point(197, 136);
+            resources.ApplyResources(this.txtNewPW, "txtNewPW");
             this.txtNewPW.Name = "txtNewPW";
-            this.txtNewPW.Size = new System.Drawing.Size(394, 32);
-            this.txtNewPW.TabIndex = 4;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnCancel);
@@ -80,126 +69,72 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtConfirmPW);
             this.panel1.Controls.Add(this.txtNewPW);
-            this.panel1.Location = new System.Drawing.Point(12, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 310);
-            this.panel1.TabIndex = 5;
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 6);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(582, 44);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Change Password";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCancel
             // 
-            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(461, 257);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(130, 40);
-            this.btnCancel.TabIndex = 34;
-            this.btnCancel.Text = "CANCEL";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 85);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Current Password";
             // 
             // btnEnter
             // 
-            this.btnEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.btnEnter, "btnEnter");
             this.btnEnter.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnEnter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnter.FlatAppearance.BorderSize = 0;
-            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnter.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.ForeColor = System.Drawing.Color.White;
-            this.btnEnter.Location = new System.Drawing.Point(314, 257);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(130, 40);
-            this.btnEnter.TabIndex = 33;
-            this.btnEnter.Text = "ENTER";
             this.btnEnter.UseVisualStyleBackColor = false;
             // 
             // txtCurrentPW
             // 
-            this.txtCurrentPW.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCurrentPW.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentPW.Location = new System.Drawing.Point(197, 82);
+            resources.ApplyResources(this.txtCurrentPW, "txtCurrentPW");
             this.txtCurrentPW.Name = "txtCurrentPW";
-            this.txtCurrentPW.Size = new System.Drawing.Size(394, 32);
-            this.txtCurrentPW.TabIndex = 4;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 193);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Confirm Password";
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 139);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "New Password";
             // 
             // txtConfirmPW
             // 
-            this.txtConfirmPW.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtConfirmPW.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPW.Location = new System.Drawing.Point(197, 190);
+            resources.ApplyResources(this.txtConfirmPW, "txtConfirmPW");
             this.txtConfirmPW.Name = "txtConfirmPW";
-            this.txtConfirmPW.Size = new System.Drawing.Size(394, 32);
-            this.txtConfirmPW.TabIndex = 4;
             // 
             // AccountSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(622, 422);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AccountSetting";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AccountSetting_Load);
             this.panel1.ResumeLayout(false);

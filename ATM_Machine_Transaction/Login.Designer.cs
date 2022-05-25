@@ -46,6 +46,7 @@ namespace ATM_Machine_Transaction
             this.btnClr = new System.Windows.Forms.Button();
             this.btnRmv = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbLanguage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,7 @@ namespace ATM_Machine_Transaction
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1797, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(1708, 24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
@@ -94,7 +95,7 @@ namespace ATM_Machine_Transaction
             this.btn1.TabIndex = 3;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.myClick);
             this.btn1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn1.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -133,7 +134,7 @@ namespace ATM_Machine_Transaction
             this.btn2.TabIndex = 5;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.myClick);
             this.btn2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn2.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -158,7 +159,7 @@ namespace ATM_Machine_Transaction
             this.btn3.TabIndex = 6;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.myClick);
             this.btn3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn3.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -183,7 +184,7 @@ namespace ATM_Machine_Transaction
             this.btn6.TabIndex = 9;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.myClick);
             this.btn6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn6.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -208,7 +209,7 @@ namespace ATM_Machine_Transaction
             this.btn5.TabIndex = 8;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.myClick);
             this.btn5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn5.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -233,7 +234,7 @@ namespace ATM_Machine_Transaction
             this.btn4.TabIndex = 7;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.myClick);
             this.btn4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn4.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -258,7 +259,7 @@ namespace ATM_Machine_Transaction
             this.btn9.TabIndex = 12;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.myClick);
             this.btn9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn9.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -283,7 +284,7 @@ namespace ATM_Machine_Transaction
             this.btn8.TabIndex = 11;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.myClick);
             this.btn8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn8.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -308,7 +309,7 @@ namespace ATM_Machine_Transaction
             this.btn7.TabIndex = 10;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.myClick);
             this.btn7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn7.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -333,7 +334,7 @@ namespace ATM_Machine_Transaction
             this.btn0.TabIndex = 14;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.myClick);
             this.btn0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
             this.btn0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
             this.btn0.MouseEnter += new System.EventHandler(this.myEventHover);
@@ -351,7 +352,7 @@ namespace ATM_Machine_Transaction
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClr.ForeColor = System.Drawing.Color.White;
-            this.btnClr.Location = new System.Drawing.Point(1078, 313);
+            this.btnClr.Location = new System.Drawing.Point(1024, 315);
             this.btnClr.Margin = new System.Windows.Forms.Padding(2);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(157, 53);
@@ -372,7 +373,7 @@ namespace ATM_Machine_Transaction
             this.btnRmv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRmv.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRmv.ForeColor = System.Drawing.Color.White;
-            this.btnRmv.Location = new System.Drawing.Point(1078, 422);
+            this.btnRmv.Location = new System.Drawing.Point(1024, 424);
             this.btnRmv.Margin = new System.Windows.Forms.Padding(2);
             this.btnRmv.Name = "btnRmv";
             this.btnRmv.Size = new System.Drawing.Size(157, 53);
@@ -396,11 +397,31 @@ namespace ATM_Machine_Transaction
             this.panel1.Controls.Add(this.btn4);
             this.panel1.Controls.Add(this.btn6);
             this.panel1.Controls.Add(this.btn5);
-            this.panel1.Location = new System.Drawing.Point(495, 89);
+            this.panel1.Location = new System.Drawing.Point(450, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(454, 544);
             this.panel1.TabIndex = 17;
+            // 
+            // lbLanguage
+            // 
+            this.lbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.lbLanguage.Font = new System.Drawing.Font("Khmer OS New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLanguage.ForeColor = System.Drawing.Color.White;
+            this.lbLanguage.Image = ((System.Drawing.Image)(resources.GetObject("lbLanguage.Image")));
+            this.lbLanguage.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbLanguage.Location = new System.Drawing.Point(1174, 24);
+            this.lbLanguage.Name = "lbLanguage";
+            this.lbLanguage.Size = new System.Drawing.Size(93, 101);
+            this.lbLanguage.TabIndex = 19;
+            this.lbLanguage.Text = "English";
+            this.lbLanguage.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lbLanguage.Click += new System.EventHandler(this.lbLanguage_Click);
+            this.lbLanguage.MouseClick += new System.Windows.Forms.MouseEventHandler(this.myEventClick);
+            this.lbLanguage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myEventDown);
+            this.lbLanguage.MouseEnter += new System.EventHandler(this.myEventHover);
+            this.lbLanguage.MouseLeave += new System.EventHandler(this.myEventLeave);
             // 
             // Login
             // 
@@ -408,7 +429,8 @@ namespace ATM_Machine_Transaction
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1408, 663);
+            this.ClientSize = new System.Drawing.Size(1319, 663);
+            this.Controls.Add(this.lbLanguage);
             this.Controls.Add(this.btnRmv);
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.pictureBox1);
@@ -416,10 +438,10 @@ namespace ATM_Machine_Transaction
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -447,5 +469,6 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.Button btnRmv;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbLanguage;
     }
 }

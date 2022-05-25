@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -55,11 +73,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_frm.Designer.cs">
+      <DependentUpon>Admin_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlertMessage_frm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AlertMessage_frm.Designer.cs">
       <DependentUpon>AlertMessage_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseTemplates_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChooseTemplates_UC.Designer.cs">
+      <DependentUpon>ChooseTemplates_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="clsGetData.cs" />
     <Compile Include="ConfirmWithdraw_frm.cs">
@@ -67,6 +97,36 @@
     </Compile>
     <Compile Include="ConfirmWithdraw_frm.Designer.cs">
       <DependentUpon>ConfirmWithdraw_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniPayment_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniPayment_frm.Designer.cs">
+      <DependentUpon>MiniPayment_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateFrm.Designer.cs">
+      <DependentUpon>TemplateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer_frm.Designer.cs">
+      <DependentUpon>Transfer_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_frm.Designer.cs">
+      <DependentUpon>Payment_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_frm.Designer.cs">
+      <DependentUpon>Transaction_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="Withdraw_frm.cs">
       <SubType>Form</SubType>
@@ -106,11 +166,62 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountSetting.km-KH.resx">
+      <DependentUpon>AccountSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_frm.resx">
+      <DependentUpon>Admin_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertMessage_frm.km-KH.resx">
+      <DependentUpon>AlertMessage_frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlertMessage_frm.resx">
       <DependentUpon>AlertMessage_frm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChooseTemplates_UC.resx">
+      <DependentUpon>ChooseTemplates_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmWithdraw_frm.km-KH.resx">
+      <DependentUpon>ConfirmWithdraw_frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmWithdraw_frm.resx">
       <DependentUpon>ConfirmWithdraw_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposit_frm.km-KH.resx">
+      <DependentUpon>Deposit_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form_1.km-KH.resx">
+      <DependentUpon>Main_Form_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_frm.km.resx">
+      <DependentUpon>Main_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniPayment_frm.km-KH.resx">
+      <DependentUpon>MiniPayment_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniPayment_frm.resx">
+      <DependentUpon>MiniPayment_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateFrm.resx">
+      <DependentUpon>TemplateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer_frm.km-KH.resx">
+      <DependentUpon>Transfer_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer_frm.resx">
+      <DependentUpon>Transfer_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_frm.km-KH.resx">
+      <DependentUpon>Payment_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_frm.resx">
+      <DependentUpon>Payment_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_frm.resx">
+      <DependentUpon>Transaction_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdraw_frm.km-KH.resx">
+      <DependentUpon>Withdraw_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Withdraw_frm.resx">
       <DependentUpon>Withdraw_frm.cs</DependentUpon>
@@ -155,7 +266,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\Imgaes\Sample Icon ABA -04.png" />
+    <Content Include="Icon Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

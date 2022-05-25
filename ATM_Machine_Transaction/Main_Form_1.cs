@@ -38,35 +38,51 @@ namespace ATM_Machine_Transaction
             Login frm = new Login();
             frm.Show();
             this.Hide();
+            
         }
 
         private void myEventHoverButton(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            if (button.Text == "Return")
+            if (button.Text == "Return" || button.Text == "ចាកចេញ")
             {
                 Login frm = new Login();
                 frm.Show();
                 this.Hide();
             }
-            else if (button.Text == "Deposit")
+            else if (button.Text == "Deposit" || button.Text == "ដាក់ប្រាក់")
             {
                 myLoadForm(new Deposit_frm());
             }
-           else if (button.Text == "Withdraw")
+           else if (button.Text == "Withdraw" || button.Text == "ដកប្រាក់")
             {
                 myLoadForm(new Withdraw_frm());
             }
-            else if (button.Text == "Account Setting")
+            else if (button.Text == "Transfer" || button.Text == "ផ្ទេរប្រាក់")
+            {
+                myLoadForm(new Transfer_frm());
+            }
+            else if (button.Text == "Payment" || button.Text == "ទូទាត់ប្រាក់")
+            {
+                myLoadForm(new Payment_frm());
+            }
+            else if (button.Text == "Account Setting" || button.Text == "គណនី")
             {
                 myLoadForm(new AccountSetting());
             }
+            else if (button.Text == "Transaction")
+            {
+                myLoadForm(new Transaction_frm());
+            }
+            clsGetData.CheckBtn = button.Text;
         }//
 
         private void Main_Form_1_Load(object sender, EventArgs e)
         {
             timer1.Start();
             clsGetData.Balance = double.Parse(lbBalance.Text.Replace("$","").Replace(",",""));
+            clsGetData.AccountNo = lbAccountNumber.Text;
+            label1.Focus();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {

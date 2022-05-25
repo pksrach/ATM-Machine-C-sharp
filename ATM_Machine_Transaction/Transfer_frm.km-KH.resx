@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 27.75pt, style=Bold</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 50</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>ទូទាត់ប្រាក់</value>
+  </data>
+  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 15.75pt</value>
+  </data>
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACUAAAAoCAYAAAB5ADPdAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAADA
+        PAAAwDwBt5yhRgAAAmBJREFUWEfFlwFxwzAMRQthEAphEAahEAphEAZhEAZhEAphEAahDDI/375PVpXU
+        ae1Ed++ulp34W7IV9zBN0wiOga+Z0PkkH4kv51tF6HyQt8RvAjslojFNhM6VIOaSsEa0EPaSiJ5ZJHSu
+        gL1DqpbsJ3FONAsMnQ/AhETnmsCIEoLfE4oifYy5Ky50PgETfiYQYv02ouw7Um77K0JnB+YmxU86MaIY
+        jRkmagmiqaiFpePGsSESxj6r+qrGDkhYVdfsgL1gj3Eyy6n0A/aAk4mosr/8gL1gX2H5Qx4NsJBras4I
+        qGeah9SVaMn5+o/agofXGnuEerQENQqztQqReW/JQWdU/keLsuWAoGAnOWwoLRJFWHkZPj6uvczXqJxC
+        NZjIdgqJsg8jrpd5Ucx3sY4IiWIF+YGEvl09zIuiXTkiSBsDR2Lno105IvxDvfHvz/uVHzoRtlN8J5S2
+        EeZF5VPJDx1R2ylaxHBp4+VCfx5azIuinX9Q2n2nGBUhmZ8331rVKB9Dh0SxeqVxiTVRwrwoTnapU3Oo
+        UI4QRZmxnza+KNjZCpiDB3UYepJvBAYF4GidftDWKBvV1YXjzwqsbysUpXwtth1ECrXWtwXspRIl8AP0
+        WfH+kVAGsJIlPwDV0WVvFEpbdXWyA7aGyGAlbaJqOFhF9X+sI4oQxfLmxls1HKSRAjd3K30U7SEiFF3B
+        76aPE8lqKBdR/xpIlyr+4kJDZ4AtrKwuXGEAz3EDkRj9qYjGFkLnHfL1IhkTsGIrmJTTT2mhX0aq2Ef2
+        PbOEzgY0OZPZEiLB+BFGlKzoBqbDH6M3r9jLpks3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>     ផ្ទេរទៅកាន់កាត</value>
+  </data>
+  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 15.75pt</value>
+  </data>
+  <data name="button7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAwDwAAMA8AbecoUYAAAMESURBVFhHvZcLcd0wEEUDIRAKIRAKoRAKoRACoRACoRAC
+        oRAKIQxedTS5nit59bHseGfOvHgty1er3ZXz9Hg8zvCS+JV4S7wn/iVkHwl8fxKvie+JaI4pQueAb4nf
+        CRc1a4hnUYdFh84GCOQlkf1NcI/IOSyIqEaGf1pw6AzgpUTDjS39kXhORM/UIIrF1PPgG84ROg0mqCPC
+        xEQ3Gj8Dc9YLJ43I92h8JnR+woOeh2xvd7KDIJhdkSH8ZyIa2xSKIF8xuRaNuwLEuYVid44EK/VINld5
+        IR4Yfnc7V1x84jl5h0hRiy0KzAcCzVtG0dT3HSZiPJUf3V/B04D83e75ICpZK6Jw/F4NIhmDsQPRmFWo
+        B9nWZ30AEZT1qttFYlenB/MrYNRK9usm0ZT1tvyrRQpPgZxauuG52Wrmd4kU6jw5V0NnA04TGePJzTOM
+        itDf94zDt70XJX/wCtu1oIpCFw7Ph9a2AxFwozoRv0pPpNBOv3HBQ9hWYR18UeTrzMvOoE70zgX5gvFb
+        D4y4U6yCmC8kFGc9sIWL7RXgWbZ042JFKDAJz37llxUnUzYuVoUegR2gyvmN7re4XagfKEfEhlvPbz3w
+        SvxbYlZsUUz6WplpT2eoj+DRZyQU7ckreLbVkDsrsJX6MsJGhVg0/NkjVHhUzlov3XZHKEj5TE9UW1rF
+        F8p19A4ovujk3JI2We+8P4vn6ahdKXh5MXJ6mGeSfAX+a3CRvf8ivG7yYvymt4/eJCsQCBXRSCRRVzS3
+        TuQDfDJW7vfOotQaiQT/5456yP56kOfqlWc4rYm5RyK3kyhZUWg+SHhVzrSrq2ARnh5FT/eBggF6ALtD
+        rIvE2IFiTHFh1A+ybdG4K6hPqzAwO4dRiyVnruyx7JwXDtbcvdBpIMxzFuFEt8ifBRDkQeDvbqGFzgDv
+        BhgT03e39jEBQoigC8Q4tocLD50NiC7bHxl+FgNEiwXoGiG1OIxmviuaFqFzAJEhmtHLZwzh0wJF6DyA
+        GjkR9VyWETXuseVEeTG3H0//AbZ7Tugk9o2YAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>     ផ្ទេរទៅគណនីណាមួយ</value>
+  </data>
+  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 15.75pt</value>
+  </data>
+  <data name="button8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAnCAYAAACbgcH8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAADA
+        PAAAwDwBt5yhRgAAAwJJREFUWEfNlgFxHDEMRQOhEAKhEAIhEAohEAIhEAKhEAqhEAqhDK5+O/GO/Pd7
+        Je9lptHMm7mzZVuSJXkfbrfbZ/PY+NF4bfwy/Gww99Rw61Ps4AW+NV4avxsr8rfx3lhywA4ugLFEjcPv
+        FW7he8OdM2AHixCdP42Z4AiGEEkc6+mS3QZ67rwdO1iAVHCCExyaRYwbIu9xwgmOoePWXjKayKkQVYxw
+        +hkUrjN+avhhIOGtoUI3mEZlgeeG1oY1fPiTQCRVSBOnexXSSuuEWxj0hj8ncIUahavpkEFk1fChOKPy
+        GZpzaYV/gAF0mU6ppTXQ0yARuG1elR0cFoU8c3oRjHUFixBF9nTrItqh2G+bU0WHRrnSzrJejFTSS8/e
+        ou0UIyhF2b09gW5SEa5/v/IJest0r9RovaIsysxHwTBaGXMYqA5VghBvjdRKjY7Xsy1I0D7unIx74pTO
+        Kxq4R6cUiRW8XU1CNIjfTofIR8lSRG/v2Sl1KKgoq4VTNTpLOYjy6hQ6WgSVNrWaHojOO+Kad6fQ0YhU
+        jFZHY08mDbR3VwoRhhtkQI1bFc1JjeRMKi2vczAaNAJVcXnOE18RbuEuo3WiItpNKNzqw9KFaFcKMXax
+        oRCrzy+CcXEtOIOJJs4RfXD7Z4ZrF3tRBRZHr5xwMBvFdfoAsMfsW5sz1Hj+O104NASnpB0gCsZoHuJA
+        dDSLHLhbnb0DWm/TZ5wNnDhjVHcWYUWdddEmQFG2tFSliHpYiQRGOJ0Z+hhl86RK+YPp7BGIXccV6Bma
+        ivEB41aj7B9sXWEGVxg3ctAVMBy2SCzS10KvF5fz+95x8VdCUxOH9vmo+FVQg6kTIr/rROX/DYYRUZVD
+        eg5/LtALiegM0ViEzhTbXxfbsQ4DC2BkPIjftKjqRxDrMYquoMJe06K2g0W0JUWh8nGAh4bb6GAI3ebs
+        w4q1py+qHVwAQ7Q1XRWii0PunAE7eAGu+arx3dhyTdjBOyCfSQm6QMx3FRykeK88Rp9utANHek7f02E+
+        uD38Azr5s0nF2/glAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button8.Text" xml:space="preserve">
+    <value>     ផ្ទេរប្រាក់ទៅគណនីខ្លួនឯង</value>
+  </data>
+  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 15.75pt</value>
+  </data>
+  <data name="button9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAADA
+        PAAAwDwBt5yhRgAAA0ZJREFUWEe91gF120AQBNBCKIRACIRCCIRAKIRAKIRCKIRAKIRCKAP3vp5HXZ3P
+        kh1LmffGklZ3u3O7eyd/OZ1Oe/HbgKNxd3NovIFfG18bfzb+aYTfje+FnuFv469G480b+Vvl0LjCp0bC
+        gIjvjc+No7Gh98YRCq53ZXloHFAGIs6V2LwT8K3xR2PNpGd275NB89hk15jq5yqHxo4vjSlZnApMLPut
+        MJ8v84m2CPO1QY13waGxMKuOI+Jk4BHo4Yjlj38LrnEXHBrPTKbSc1a+J2RWRlF/XxU6NDamFMobJ0dA
+        ViVhVeiFoVFpk8FrAlP+R0sPfSwtttC0eGiUOZP0zJZAjo3dA/yIF596ddY135yZo8O91Pc4QmAgNt/O
+        VG0QTQuR2WlWJJM9jhQYECgGkYm3EGkl6Yd86oJMyEKOQk3SnM0ITC8aQFBFyp9xhO5BWRstuCZqOk8T
+        nJBs/36zXOy2HZnveQXh3uV7P4skjGqZ6mGSPjTOVVvswb6lKqJlEiywEkPUj1CF9u1wBNJiFvLsRn/I
+        pPvRsRN8plCZFke5XxNwqn2jl2v4TKFi2A9v883ZuNYnQRW6tahHcFXkrSCUQNejQI8N9P5Rkfci2V/r
+        +R70TK0YkdlNoz8Ue8EpIsatQqNtKrfdnd10ZI9JwK1C80mUvEmkMsRI+ZGoQq+dyVBPmxc3qGec8Br1
+        aFSh146x/BuCp4ikPC/WdqwyZaM9Qi2W2EraIwmbKpyBVrT11akZ2JNEV2R/0DFt6AwUPMfE6E9GYGWc
+        PErCElsVKyQsemiZRaKJ1Lvf2n2PYG2Xp5q0WMykbfo5M+r1S+73xppASCVT1QuRaAVxtPdO3xKYFpDB
+        fFwmzjeFBqXsJu6FNYGJ54TR9xk7cb4pNEC6NbDn0RHxEVhwv0kgAsVblDlcPBQaWIW6HoGUOP4Tb8EL
+        Q2GEpj8866s9oKQ50FcF4tBYGGH6dDqzGjkT5CMwL9nTVso/LHHl0NiRM9nkTIA0tUywb2WXMH3ntIhP
+        C+WPyMUmGXFovML8pUsL9Kv3vmd9rxIWSXQt9yaHxg0SJzPEJkuOjl4gyljNtrHsI79XOTTeQQFlR3BZ
+        7qmc3t8t7D9PX/4B1P9jjsdn2Q8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>     ជ្រើសរើសគំរូ</value>
+  </data>
+</root>

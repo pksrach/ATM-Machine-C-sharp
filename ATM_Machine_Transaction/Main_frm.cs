@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,7 +15,9 @@ namespace ATM_Machine_Transaction
     {
         public Main_frm()
         {
+            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("km");
             InitializeComponent();
+            
         }
 
         private void lbExit_Click(object sender, EventArgs e)
@@ -46,20 +49,41 @@ namespace ATM_Machine_Transaction
                 checkBoxKhmer.Checked = false;
                 checkBoxKhmer.AutoCheck = true;
 
-                labelWelcome.Font = new Font("Microsoft YaHei UI", 14);
-                labelWelcome.Text = "Welcome";
+                //labelWelcome.Font = new Font("Microsoft YaHei UI", 14);
+                //labelWelcome.Text = "Welcome";
             }
         }
-
+        
         private void checkBoxKhmer_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxKhmer.Checked == true)
+            DialogResult dr = MessageBox.Show("Do you want to change language ?", "Language", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
             {
-                checkBoxKhmer.AutoCheck = false;
-                checkBoxEnglish.Checked = false;
-                checkBoxEnglish.AutoCheck = true;
-                labelWelcome.Font = new Font("KH ABC TEXT 04", 14);
-                labelWelcome.Text = "សូមស្វាគមន៍";
+                if (checkBoxKhmer.Checked == true)
+                {
+                    checkBoxKhmer.AutoCheck = false;
+                    checkBoxEnglish.Checked = false;
+                    checkBoxEnglish.AutoCheck = true;
+
+                    //labelWelcome.Font = new Font("KH ABC TEXT 04", 14);
+                    //labelWelcome.Text = "សូមស្វាគមន៍";
+                    //MessageBox.Show(c.Tag.ToString());
+                    //b = new Label();
+                    //b.Font = new Font("KH ABC TEXT 04", 14);
+                    //b.Text = b.Tag.ToString();
+                    switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
+                    {
+                        case "km":
+                            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+                            break;
+                        case "en-US":
+                            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("km");
+                            break;
+                    }
+                    this.Controls.Clear();
+                    InitializeComponent();
+
+                }
             }
         }
 
@@ -75,6 +99,21 @@ namespace ATM_Machine_Transaction
             Deposit_frm frm = new Deposit_frm();
             frm.Show();
             this.Hide();
+        }
+        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //Thread.CurrentThread.CurrentUICulture.IetfLanguageTag.ToString();
+            //switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
+            //{
+            //    case "km":
+            //        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            //        break;
+            //    case "en-US":
+            //        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("km");
+            //        break;
+            //}
+
         }
     }//
 }///

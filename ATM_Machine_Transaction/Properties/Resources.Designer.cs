@@ -59,15 +59,5 @@ namespace ATM_Machine_Transaction.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sample_Icon_ABA__04 {
-            get {
-                object obj = ResourceManager.GetObject("Sample Icon ABA -04", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

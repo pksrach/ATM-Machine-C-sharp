@@ -38,7 +38,8 @@ namespace ATM_Machine_Transaction
             //double.Parse(txtCash.Text.Replace("$", ""))
             if (cash < 10)
             {
-                AlertMessage = new AlertMessage_frm("Your amount is not enough, Must be big than $10", "Warning");
+                if (clsGetData.MyLanguage == "English") AlertMessage = new AlertMessage_frm("Your amount is not enough, Must be big than $10", "Warning");
+                else AlertMessage = new AlertMessage_frm("ប្រាក់របស់អ្នក មិនគ្រប់គ្រាន់ទេ, ត្រូវតែធំជាង 10$", "បំរាម");
                 AlertMessage.ShowDialog();
                 txtCash.Focus();
                 txtCash.SelectAll();
@@ -46,13 +47,15 @@ namespace ATM_Machine_Transaction
             }
             else if (cash > clsGetData.Balance)
             {
-                AlertMessage = new AlertMessage_frm("The entered " + txtCash.Text + " is higher than your balance " + clsGetData.Balance + "$ , Pleases enter lower amount !", "Warning");
+                if (clsGetData.MyLanguage == "English") AlertMessage = new AlertMessage_frm("The entered " + txtCash.Text + " is higher than your balance " + clsGetData.Balance + "$ , Pleases enter lower amount !", "Warning");
+                else AlertMessage = new AlertMessage_frm("ប្រាក់បញ្ចូល ធំជាងប្រាក់បច្ចុប្បន្នរបស់អ្នក, សូមបញ្ចូលប្រាក់តិចជាងប្រាក់បច្ចុប្បន្ន", "បំរាម");
                 AlertMessage.ShowDialog();
             }
             else
             {
                 clsGetData.Balance -= double.Parse(txtCash.Text.Replace("$", ""));
-                AlertMessage = new AlertMessage_frm("Your amount " + txtCash.Text + " has been withdraw successfully, Your balance " + clsGetData.Balance + "$", "Warning");
+                if (clsGetData.MyLanguage == "English") AlertMessage = new AlertMessage_frm("Your amount " + txtCash.Text + " has been withdraw successfully, Your balance " + clsGetData.Balance + "$", "Success");
+                else AlertMessage = new AlertMessage_frm("ប្រាក់របស់អ្នក " + txtCash.Text + " ដកបានជោគជ័យ, ប្រាក់បច្ចុប្បន្នរបស់អ្នកនៅសល់ " + clsGetData.Balance + "$", "ជោគជ័យ");
                 AlertMessage.ShowDialog();
             }
             this.Close();
@@ -94,10 +97,12 @@ namespace ATM_Machine_Transaction
 
         }
 
-        private void txtCash_KeyDown(object sender, KeyEventArgs e)
+        private void txtCash_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8; // 8 is backspace
+            if (e.KeyChar == (char)13)
             {
+                //btnEnter_Click(null, null);
                 btnEnter_Click(sender, e);
             }
         }
