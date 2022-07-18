@@ -36,5 +36,25 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.Rows.Add("T000000001", DateTime.Now.ToLongDateString(), clsGetData.AccountNo, "Helloworld service");
             this.dataGridView1.Rows.Add("T000000001", DateTime.Now.ToLongDateString(), clsGetData.AccountNo, "Helloworld service");
         }
+
+        private void lbSearch_MouseDown(object sender, MouseEventArgs e)
+        {
+            lbSearch.ForeColor = Color.White;
+        }
+
+        private void lbSearch_MouseEnter(object sender, EventArgs e)
+        {
+            lbSearch.ForeColor = Color.Silver;
+        }
+
+        private void lbSearch_MouseLeave(object sender, EventArgs e)
+        {
+            lbSearch.ForeColor = Color.White;
+        }
+
+        private void lbSearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            lbSearch.ForeColor = Color.Silver;
+        }
     }//
 }///

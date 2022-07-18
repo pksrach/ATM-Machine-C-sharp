@@ -10,6 +10,30 @@ namespace ATM_Machine_Transaction
 {
     class clsGetData
     {
+        //Get User ID from Customer
+        private static int id;
+        public static int GetID
+        {
+            get => id;
+            set => id = value;
+        }
+
+        //Get Customer Name
+        private static string name;
+        public static string GetCustomerName
+        {
+            get => name;
+            set => name = value;
+        }
+
+        //Get Role
+        private static string role;
+        public static string GetRole
+        {
+            get => role;
+            set => role = value;
+        }
+
         //get account no 
         private static string accountNo;
         public static string AccountNo
@@ -18,8 +42,8 @@ namespace ATM_Machine_Transaction
             set => accountNo = value;
         }
         //get Balance for customer
-        private static double balance;
-        public static double Balance {
+        private static decimal balance;
+        public static decimal Balance {
             get => balance;                     //get { return name; }   // get method
             set => balance = value;     //set { name = value; }  // set method
         }
@@ -74,14 +98,14 @@ namespace ATM_Machine_Transaction
 
 
         //get data from choose template uc
-        private string username;
-        private string account;
-        public string MyUsername
+        private static string username;
+        private static string account;
+        public static string MyUsername
         {
             get => username;
             set => username = value;
         }
-        public string MyAccount
+        public static string MyAccount
         {
             get => account;
             set => account = value;

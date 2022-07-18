@@ -12,7 +12,6 @@ namespace ATM_Machine_Transaction
 {
     public partial class Transfer_frm : Form
     {
-        clsGetData check = new clsGetData();
         public Transfer_frm()
         {
             InitializeComponent();
@@ -40,6 +39,8 @@ namespace ATM_Machine_Transaction
             TextBox note = new TextBox();
             if (btn.Text == "     Choose From Template" || btn.Text == "     ជ្រើសរើសគំរូ")
             {
+                TemplateFrm frm = new TemplateFrm();
+                frm.ShowDialog();
                 data.MyTitle = btn.Text.Trim();
                 if (clsGetData.MyLanguage == "ខ្មែរ") t.Text = "លេខទូរស័ព្ទ";
                 else t.Text = "Quick Transfer";
@@ -73,6 +74,7 @@ namespace ATM_Machine_Transaction
                 amt.Text = "​Amount";
                 note.Text = "Remark (optional)";
             }
+            clsCheck.MyCheckBtn = btn.Text;
             data.MyIcon = btn.Image;
             myLoadMiniFrm(new MiniPayment_frm(data.MyTitle, data.MyIcon, t, amt, note));
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace ATM_Machine_Transaction
 {
@@ -14,6 +15,7 @@ namespace ATM_Machine_Transaction
     {
         AlertMessage_frm AlertMessage;
         public Point mouseLocation;
+        DbConnection db = new DbConnection();
         public ConfirmWithdraw_frm(string cash)
         {
             InitializeComponent();
@@ -33,7 +35,7 @@ namespace ATM_Machine_Transaction
                 txtCash.Focus();
                 return;
             }
-            double cash = double.Parse(txtCash.Text.Replace("$", "").Replace(",", ""));
+            decimal cash = decimal.Parse(txtCash.Text.Replace("$", "").Replace(",", ""));
             //validate amount for withdraw is bigger than balance
             //double.Parse(txtCash.Text.Replace("$", ""))
             if (cash < 10)
@@ -53,7 +55,27 @@ namespace ATM_Machine_Transaction
             }
             else
             {
-                clsGetData.Balance -= double.Parse(txtCash.Text.Replace("$", ""));
+                //clsGetData.Balance -= decimal.Parse(txtCash.Text.Replace("$", ""));
+                //insert to table withdraw
+                db.ConectionStr();
+                string query = "insert into Cash_Withdrawal_Transaction_tbl (Tran_Ref, Tran_Date, Withdrawal_Amount, Win_UserId) values(@p1, @p2, @p3, @p4)";
+                db.cmd = new OleDbCommand(query, db.con);
+                db.cmd.Parameters.AddWithValue("@p1", clsGetData.GetCustomerName);
+                db.cmd.Parameters.AddWithValue("@p2", DateTime.Now.ToString());
+                db.cmd.Parameters.AddWithValue("@p3", txtCash.Text);
+                db.cmd.Parameters.AddWithValue("@p4", clsGetData.GetID);
+                db.cmd.ExecuteNonQuery();
+                //update Balance
+                clsGetData.Balance -= cash;
+                string query2 = "update Customer_User_tbl cu inner join Customer_tbl c on c.CID = cu.UID set Balance = @p1 where cu.UID = @uid";
+                db.cmd = new OleDbCommand(query2, db.con);
+                db.cmd.Parameters.AddWithValue("@p1", clsGetData.Balance);
+                db.cmd.Parameters.AddWithValue("@uid", clsGetData.GetID);
+                db.cmd.ExecuteNonQuery();
+                db.con.Close();
+                //-------------end query--------------------------
+
+
                 if (clsGetData.MyLanguage == "English") AlertMessage = new AlertMessage_frm("Your amount " + txtCash.Text + " has been withdraw successfully, Your balance " + clsGetData.Balance + "$", "Success");
                 else AlertMessage = new AlertMessage_frm("ប្រាក់របស់អ្នក " + txtCash.Text + " ដកបានជោគជ័យ, ប្រាក់បច្ចុប្បន្នរបស់អ្នកនៅសល់ " + clsGetData.Balance + "$", "ជោគជ័យ");
                 AlertMessage.ShowDialog();

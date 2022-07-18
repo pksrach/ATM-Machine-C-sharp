@@ -9391,6 +9391,9 @@
   <data name="btnPayment.Text" xml:space="preserve">
     <value>ទូទាត់ប្រាក់</value>
   </data>
+  <data name="btnBalance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS Battambang, 12pt</value>
+  </data>
   <data name="btnBalance.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
@@ -9411,6 +9414,9 @@
   </data>
   <data name="btnBalance.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 90</value>
+  </data>
+  <data name="btnBalance.Text" xml:space="preserve">
+    <value>ប្រតិបត្តិការ</value>
   </data>
   <data name="btnBalance.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>

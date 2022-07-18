@@ -34,7 +34,7 @@ namespace ATM_Machine_Transaction
             this.txtNewPW = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEnter = new System.Windows.Forms.Button();
             this.txtCurrentPW = new System.Windows.Forms.TextBox();
@@ -55,13 +55,15 @@ namespace ATM_Machine_Transaction
             // 
             resources.ApplyResources(this.txtNewPW, "txtNewPW");
             this.txtNewPW.Name = "txtNewPW";
+            this.txtNewPW.UseSystemPasswordChar = true;
+            this.txtNewPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNewPW_KeyDown);
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnEnter);
             this.panel1.Controls.Add(this.txtCurrentPW);
@@ -76,15 +78,15 @@ namespace ATM_Machine_Transaction
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // btnCancel
+            // btnClear
             // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -100,11 +102,14 @@ namespace ATM_Machine_Transaction
             this.btnEnter.ForeColor = System.Drawing.Color.White;
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.UseVisualStyleBackColor = false;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // txtCurrentPW
             // 
             resources.ApplyResources(this.txtCurrentPW, "txtCurrentPW");
             this.txtCurrentPW.Name = "txtCurrentPW";
+            this.txtCurrentPW.UseSystemPasswordChar = true;
+            this.txtCurrentPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCurrentPW_KeyDown);
             // 
             // label4
             // 
@@ -120,6 +125,8 @@ namespace ATM_Machine_Transaction
             // 
             resources.ApplyResources(this.txtConfirmPW, "txtConfirmPW");
             this.txtConfirmPW.Name = "txtConfirmPW";
+            this.txtConfirmPW.UseSystemPasswordChar = true;
+            this.txtConfirmPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtConfirmPW_KeyDown);
             // 
             // AccountSetting
             // 
@@ -154,7 +161,7 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtConfirmPW;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Label label5;
     }

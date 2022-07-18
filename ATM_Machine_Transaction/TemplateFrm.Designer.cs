@@ -29,87 +29,67 @@ namespace ATM_Machine_Transaction
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.chooseTemplates_UC1 = new ATM_Machine_Transaction.ChooseTemplates_UC();
-            this.chooseTemplates_UC2 = new ATM_Machine_Transaction.ChooseTemplates_UC();
-            this.chooseTemplates_UC3 = new ATM_Machine_Transaction.ChooseTemplates_UC();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // tableLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Controls.Add(this.chooseTemplates_UC1);
-            this.flowLayoutPanel1.Controls.Add(this.chooseTemplates_UC2);
-            this.flowLayoutPanel1.Controls.Add(this.chooseTemplates_UC3);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(330, 394);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.AutoScroll = true;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 52);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(311, 320);
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // chooseTemplates_UC1
+            // button1
             // 
-            this.chooseTemplates_UC1.BackColor = System.Drawing.Color.SeaGreen;
-            this.chooseTemplates_UC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chooseTemplates_UC1.Location = new System.Drawing.Point(4, 5);
-            this.chooseTemplates_UC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chooseTemplates_UC1.MyAccount = "001 456 987";
-            this.chooseTemplates_UC1.MyUsername = "Mr. Samrach";
-            this.chooseTemplates_UC1.Name = "chooseTemplates_UC1";
-            this.chooseTemplates_UC1.Size = new System.Drawing.Size(300, 80);
-            this.chooseTemplates_UC1.TabIndex = 0;
-            // 
-            // chooseTemplates_UC2
-            // 
-            this.chooseTemplates_UC2.BackColor = System.Drawing.Color.SeaGreen;
-            this.chooseTemplates_UC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chooseTemplates_UC2.Location = new System.Drawing.Point(4, 95);
-            this.chooseTemplates_UC2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chooseTemplates_UC2.MyAccount = "012 321 456";
-            this.chooseTemplates_UC2.MyUsername = "Kunthea";
-            this.chooseTemplates_UC2.Name = "chooseTemplates_UC2";
-            this.chooseTemplates_UC2.Size = new System.Drawing.Size(300, 80);
-            this.chooseTemplates_UC2.TabIndex = 1;
-            // 
-            // chooseTemplates_UC3
-            // 
-            this.chooseTemplates_UC3.BackColor = System.Drawing.Color.SeaGreen;
-            this.chooseTemplates_UC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chooseTemplates_UC3.Location = new System.Drawing.Point(4, 185);
-            this.chooseTemplates_UC3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chooseTemplates_UC3.MyAccount = "Template Account";
-            this.chooseTemplates_UC3.MyUsername = "Template Username";
-            this.chooseTemplates_UC3.Name = "chooseTemplates_UC3";
-            this.chooseTemplates_UC3.Size = new System.Drawing.Size(300, 80);
-            this.chooseTemplates_UC3.TabIndex = 2;
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(223, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 37);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TemplateFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(330, 394);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(311, 372);
+            this.ControlBox = false;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TemplateFrm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.TemplateFrm_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MyMouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MyMouseMove);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private ChooseTemplates_UC chooseTemplates_UC1;
-        private ChooseTemplates_UC chooseTemplates_UC2;
-        private ChooseTemplates_UC chooseTemplates_UC3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -23,19 +23,33 @@ namespace ATM_Machine_Transaction
             txtAmount.Tag = amt.Text;
             txtNote.Text = note.Text;
             txtNote.Tag = note.Text;
+
             if (clsGetData.CheckBtn == "Transfer")
             {
-                lbTotalLable.Visible = false;
+                lbTotalLable.Visible = false;                
+                if (clsCheck.MyCheckBtn == "     Choose From Template")
+                {
+                    txtMobilePhone.Text = clsGetData.MyAccount;
+                    txtMobilePhone.ForeColor = Color.Black;
+                    txtMobilePhone.Width = 300;
+                }
+                else
+                {
+                    txtMobilePhone.Text = t.Text;
+                    txtMobilePhone.Tag = t.Text;
+                }
             }
             else
             {
                 lbTotalLable.Visible = true;
-                if(clsGetData.CheckBtn== "Choose From Template")
+                if(clsGetData.CheckBtn == "Choose From Template")
                 {
+                    txtMobilePhone.Text = clsGetData.MyAccount;
+                    txtMobilePhone.ForeColor = Color.Black;
                     txtMobilePhone.Width = 300;
                 }
             }
-            
+            lbTittle.Focus();
         }
 
         private void MiniPayment_frm_Load(object sender, EventArgs e)

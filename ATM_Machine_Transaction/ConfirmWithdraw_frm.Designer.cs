@@ -37,10 +37,10 @@ namespace ATM_Machine_Transaction
             // 
             // btnCancel
             // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -48,8 +48,8 @@ namespace ATM_Machine_Transaction
             // 
             // btnEnter
             // 
-            resources.ApplyResources(this.btnEnter, "btnEnter");
             this.btnEnter.BackColor = System.Drawing.Color.MediumSeaGreen;
+            resources.ApplyResources(this.btnEnter, "btnEnter");
             this.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnter.FlatAppearance.BorderSize = 0;
             this.btnEnter.ForeColor = System.Drawing.Color.White;

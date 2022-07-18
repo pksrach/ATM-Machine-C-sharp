@@ -23,7 +23,7 @@ namespace ATM_Machine_Transaction
         private void lbExit_Click(object sender, EventArgs e)
         {
             //Application.Exit();
-            Login frm = new Login();
+            Login_old frm = new Login_old();
             frm.Show();
             this.Hide();
         }
