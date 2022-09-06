@@ -79,9 +79,11 @@ namespace ATM_Machine_Transaction
             dataGridView1.DataSource = db.dt;
             dataGridView1.Columns["CID"].Visible = false;
             dataGridView1.Columns["DOB"].HeaderText = "Date of Birth";
+            dataGridView1.Columns["DOB"].DefaultCellStyle.Format = "dd-MM-yyyy";
+
             db.con.Close();
         }
-        
+        private int num = 0;
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (check.isEmptyTextBox(txtFullname) == true) return;
@@ -98,7 +100,7 @@ namespace ATM_Machine_Transaction
             db.cmd.Parameters.AddWithValue("@p4", txtPhoneNum.Text);
             db.cmd.Parameters.AddWithValue("@p5", txtAddress.Text);
             //cmd.Parameters.AddWithValue("@p6", picBox);
-            db.cmd.Parameters.AddWithValue("@p7", lbAccount.Text);
+            db.cmd.Parameters.AddWithValue("@p7", lbAccount.Text.Replace(" ", ""));
 
             db.con.Open();
             db.cmd.ExecuteNonQuery();
@@ -279,6 +281,11 @@ namespace ATM_Machine_Transaction
         private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             dataGridView1.Rows[e.RowIndex].Cells["colNo"].Value = (e.RowIndex + 1).ToString();
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            
         }
     }//
 }//

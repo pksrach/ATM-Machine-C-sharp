@@ -181,7 +181,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 269</value>
+    <value>20, 194</value>
   </data>
   <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -211,7 +211,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="button5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -240,7 +240,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 355</value>
+    <value>20, 280</value>
   </data>
   <data name="button5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -270,67 +270,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt</value>
-  </data>
-  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACsAAAAqCAYAAAAqAaJlAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAADA
-        PAAAwDwBt5yhRgAAAuFJREFUWEfNmOFt3DAMhTNCRugIXaBAR8jP/uwIHSEjdISOkBEyQkfoCN3gqs8w
-        BYp+lHm5O7sP+BCcbEtPFEWpfbpcLrfytfHaeF/x+tOg7VfjR+NzQ/VRQjYWwCAGPiIm8LPxqaH6TpGN
-        EzAZo3eLmHDZtGwUPDfeGo/Q3wYposYdkI0B8owOHy1WjKAoDwuy0fG9caR+N9K0kI0rRxs1sYrS8KZh
-        hY10pojwJiWGHyvM6ogc3RMbevA2/Fi5Z2m6VUOV8CbhrDzNxAr3dIhmOV1m4mMKOccrcBKRXxXxLUvL
-        d0SMv5XazXsbs3tR5aOsDpLn2fGLSfqefTtLvR5d/9EsQgzm381gYIsavDQyk5HZXWPJXXuRQTIpo5Q2
-        Iz6bQV9MIvsuizCB7GZxrrQpHyte6rkijvGlEd+Zlc1neylLdD72nRle6rkiLvO3Bu2M4cch8kov9oKq
-        AnRuzyGLvonK4N+PYIig2H2WNv6aMEkbOa6i+2odKcVbfTZjkw22h+/Xi3y1drXZ3tRHiNnbM4OdTYdx
-        E9Ax2LJmsKksYnb2+76WHb/ChKLeswcxBSJe6rkiroxVBP7GVYSo1OxeXbUILyWlCCtjIsLZ5jXiCi5m
-        Iera+lkFg/RdOSj85kOHm72GmDZ9g8XSVT0iH0k020tXPBSqkbXj8xqqffOuVz8UYsGvdKhqYVWVi1HM
-        2X7ckvhevuZFSJHqHXamSsUxDRcZ8AayOnsvoyaWWo0DXkvw/ENmalJ1kNTY+5fER8R+iRvapyVeluf+
-        BfBmeImZU8xvyc+KbCwCFsfqqxzN+uj+D+pRhWgW4jF3poaN7k0a5CozOlsEbfA2/HD4S8cZouLETZea
-        hbPyl1VVV8apWTjaMNVIGgXZGKC+HpHD5Ohm6T2yUcCme2SVmJ1kHdk4gY13z1OMgh9PyhTZWADT2f81
-        7ImU4kZVNmnIxisgxzDO4KSJijrtTIylrt5lBZenf49F5wzLu76gAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="button6.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 441</value>
-  </data>
-  <data name="button6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 0, 0</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 70</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>     Entertainment</value>
-  </data>
-  <data name="button6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button6.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="button7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -361,7 +301,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 183</value>
+    <value>20, 108</value>
   </data>
   <data name="button7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -422,7 +362,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 97</value>
+    <value>20, 22</value>
   </data>
   <data name="button8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -453,77 +393,6 @@
   </data>
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="button9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt</value>
-  </data>
-  <data name="button9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACoAAAArCAYAAAAOnxr+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAwDwAAMA8AbecoUYAAAQFSURBVFhHrdgLkRRBEARQJOAAFBBIQAISkIAEJCABCUhA
-        wklAAg6OfhfURG5tzec2yIiMm63prsr6dO/Cm+fn5//JT43Tmoc4Gi/y4+K3xV+LfxaPYI219ky+Tjka
-        D/h28evi78VHYS/RfE0xRo7GHRJ4Vjl4WlTBM/BF8BTrjqOx8f2i4BPYBct57POp3ZL8uTiBj9ORGI3B
-        z4tTFX8sSkCA74tHFSTEGr7skdjk88vipOGFo/EfbexQFcG8e2ROaz7fLUq2Q+UnLbtCu0gVYNPSPYE1
-        m4Tg0W3AhwpPHRsre2dYJCbBUV1FHcRw7ATb57mEElGzXUl0GAm+T8XefFgUMDeVyN4mgQmrdz1QR62f
-        DhTbh8Ue14ht2lIkdkeTSNXi5OgAnaEqXRC3V5b/TVuK7C032JjQEjyr4Bn47fNpDPhObCOQQjNL2cgw
-        USLPIPiVRCZ/ipWdcuhuhPZq9g1Ttnuwdjp4E/jMtYQZq4Q1m9CcQwJTuM19fo5Qbb0CPgnLbhLW9WxC
-        E4LkoeobJwhoXf7Q8Mx2lmAvTN0QibccppFTAQpTKybwoeVdFFsPOkHHxCqImZ+/EJozopKqUBCon/yO
-        al+Bj+zIlbHpcTxnF78Tmk6JtqmgGnmoJvTW8dEPyBnqHBR6wX4RmkK6sP5NNcFMZZAu9CpoKfTk/3iZ
-        QrrQ3HyEPLmPChU7T3+elTshXWhW6ggCEGu/v4J4zjE6w2GR/pfQgr1JV13O2hFOhWa5DxdfhP15QPtV
-        swfragz74XoRksJk/9qrpaPPaE9+DzmT1ttXeCI058hzBunCJ0gk9zwiVIz82u06fhKaM9Svmu5gD9ne
-        FCqJK1ccDXnB96/xb4QKkugzdWXGOLWOQBWUrGe2K78TUkMll/hEKKaQrAgIdKWqfGiZICX0LEHwddnj
-        ZZcJ33495fesF/45m+1SpbNZLfREj2B2b073Qu+g5DehvdQ9GNEc5lW2B8GvJEUMUemTqKwmWLMJRYsK
-        hHUnns9+Sb0GWpy3AeG9k9a86Euh/XQSRmzaEhI7u3YS/OyNhHc6lp1ge6kmplDsh0ZGHExi007wdHC8
-        z+B9HgviZkdBUpu2FFkkLnEktuCw1ZgIWJWrquzBe3v7XEr8RtfNh380AjmbQKz/zdhrda5Xwaxi91Vg
-        V4BeGHYabnTdfAhOYsux7K/cj3tQRYeyH1aoDtxpujMEJ7Ggtd4RPL3fg7X2ONnTofL+rpLF0Ri0sbem
-        wO4QWOOv4HUTYM2qd6pUbZ5m3ajsisTROFCwvXYLTBhR6HBgfSZiEgfsfE8xbzgadyhjgfeCvgZ88HVY
-        xeRovECzlif7Kuyx97LA4mh8JbW5fgHVfBar/dZMey/y+c1fJh2sGnBOZkUAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="button9.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 11</value>
-  </data>
-  <data name="button9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 0, 0</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 70</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>     Choose From Template</value>
-  </data>
-  <data name="button9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button9.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>

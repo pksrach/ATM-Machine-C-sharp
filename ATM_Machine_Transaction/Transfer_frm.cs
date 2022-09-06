@@ -16,6 +16,11 @@ namespace ATM_Machine_Transaction
         {
             InitializeComponent();
         }
+        public Transfer_frm(Panel panel)
+        {
+            InitializeComponent();
+            this.panel_DisplayMini = panel;
+        }
 
         private void myLoadMiniFrm(object frm)
         {
@@ -42,29 +47,23 @@ namespace ATM_Machine_Transaction
                 TemplateFrm frm = new TemplateFrm();
                 frm.ShowDialog();
                 data.MyTitle = btn.Text.Trim();
-                if (clsGetData.MyLanguage == "ខ្មែរ") t.Text = "លេខទូរស័ព្ទ";
-                else t.Text = "Quick Transfer";
-            }
-            else if(btn.Text == "     Tranfser to own account" || btn.Text == "     ផ្ទេរប្រាក់ទៅគណនីខ្លួនឯង")
-            {
-                data.MyTitle = btn.Text.Trim();
-                if (clsGetData.MyLanguage == "ខ្មែរ") t.Text = "បញ្ចូលគណនីទទួល";
-                else t.Text = "Transfer To";
+                if (clsGetData.MyLanguage == "ភាសាខ្មែរ") t.Text = "លេខទូរស័ព្ទ";
+                else t.Text = "Enter receiver account number";
             }
             else if (btn.Text == "     Tranfser to other account" || btn.Text == "     ផ្ទេរទៅគណនីណាមួយ")
             {
                 data.MyTitle = btn.Text.Trim();
-                if (clsGetData.MyLanguage == "ខ្មែរ") t.Text = "ដាក់លេខគណនីទទួល";
+                if (clsGetData.MyLanguage == "ភាសាខ្មែរ") t.Text = "ដាក់លេខគណនីទទួល";
                 else t.Text = "Enter receiver account number";
             }
             else if (btn.Text == "     Transfer to cards" || btn.Text == "     ផ្ទេរទៅកាន់កាត")
             {
                 data.MyTitle = btn.Text.Trim();
-                if (clsGetData.MyLanguage == "ខ្មែរ") t.Text = "លេខកាតរបស់អ្នកទទួល";
+                if (clsGetData.MyLanguage == "ភាសាខ្មែរ") t.Text = "លេខកាតរបស់អ្នកទទួល";
                 else t.Text = "Receiver card number";
             }
-            //check text box amount and note in mini payment
-            if (clsGetData.MyLanguage == "ខ្មែរ")
+            //check text box, amount and note in Mini Payment
+            if (clsGetData.MyLanguage == "ភាសាខ្មែរ")
             {
                 amt.Text = "​ចំនួនទឹកប្រាក់";
                 note.Text = "ចំណាំ (មិនដាក់់ក៏បាន)";
@@ -74,6 +73,7 @@ namespace ATM_Machine_Transaction
                 amt.Text = "​Amount";
                 note.Text = "Remark (optional)";
             }
+
             clsCheck.MyCheckBtn = btn.Text;
             data.MyIcon = btn.Image;
             myLoadMiniFrm(new MiniPayment_frm(data.MyTitle, data.MyIcon, t, amt, note));

@@ -52,7 +52,7 @@ namespace ATM_Machine_Transaction
         {
             MyRefresh();
         }
-
+        
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (check.isEmptyTextBox(txtUsername) == true) return;

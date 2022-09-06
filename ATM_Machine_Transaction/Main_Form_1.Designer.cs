@@ -279,7 +279,6 @@ namespace ATM_Machine_Transaction
         #endregion
 
         private System.Windows.Forms.Panel panel_ShowForm;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -300,5 +299,6 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Label labelSaving;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lbBalance;
+        public System.Windows.Forms.Panel panel1;
     }
 }

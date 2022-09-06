@@ -22,7 +22,7 @@ namespace ATM_Machine_Transaction
         public void ConectionStr()
         {
             con = new OleDbConnection();
-            con.ConnectionString = "Provider = Microsoft.ACE.OleDb.16.0; Data Source = ATM_DB.accdb";
+            con.ConnectionString = "Provider = Microsoft.ACE.OleDb.12.0; Data Source = ATM_DB.accdb";
             con.Open();
         }
         //public void myConnection()

@@ -69,6 +69,7 @@ namespace ATM_Machine_Transaction
             this.txtMobilePhone.Name = "txtMobilePhone";
             this.txtMobilePhone.Tag = "";
             this.txtMobilePhone.Enter += new System.EventHandler(this.txtBox_Enter);
+            this.txtMobilePhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMobilePhone_KeyPress);
             this.txtMobilePhone.Leave += new System.EventHandler(this.txtBox_Leave);
             // 
             // txtAmount
@@ -78,6 +79,7 @@ namespace ATM_Machine_Transaction
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Tag = "";
             this.txtAmount.Enter += new System.EventHandler(this.txtBox_Enter);
+            this.txtAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAmount_KeyPress);
             this.txtAmount.Leave += new System.EventHandler(this.txtBox_Leave);
             // 
             // btnPayNow
@@ -87,6 +89,7 @@ namespace ATM_Machine_Transaction
             this.btnPayNow.ForeColor = System.Drawing.Color.White;
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.UseVisualStyleBackColor = false;
+            this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
             // lbTotalLable
             // 

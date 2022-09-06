@@ -205,16 +205,13 @@
     <value>5</value>
   </data>
   <data name="txtMobilePhone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 169</value>
+    <value>27, 177</value>
   </data>
   <data name="txtMobilePhone.MaxLength" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="txtMobilePhone.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>16</value>
   </data>
   <data name="txtMobilePhone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 35</value>
+    <value>346, 29</value>
   </data>
   <data name="txtMobilePhone.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -240,11 +237,8 @@
   <data name="txtAmount.MaxLength" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="txtAmount.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 35</value>
+    <value>346, 29</value>
   </data>
   <data name="txtAmount.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
