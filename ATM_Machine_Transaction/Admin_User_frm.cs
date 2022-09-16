@@ -39,7 +39,7 @@ namespace ATM_Machine_Transaction
         private void MyRefresh()
         {
             md.ComboBoxData(cboName, "SELECT CID, FullName FROM Customer_tbl LEFT JOIN Customer_User_tbl ON Customer_tbl.CID = Customer_User_tbl.UID WHERE (((UID) Is Null))", "FullName", "CID");
-            md.LoadData(dataGridView1, "Select * from Customer_User_tbl");
+            md.LoadData(dataGridView1, "Select UID, UserName, Password, Active, Balance from Customer_User_tbl");
             dataGridView1.Columns["UID"].Visible = false;
             
             dataGridView1.ClearSelection();
@@ -80,7 +80,7 @@ namespace ATM_Machine_Transaction
             }
             db.con.Close();
 
-            string query = "INSERT INTO Customer_User_tbl VALUES (@p1, @p2, @p3, @p4, @p5)";
+            string query = "INSERT INTO Customer_User_tbl VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)";
             db.cmd = new OleDbCommand(query, db.con);
 
             db.cmd.Parameters.AddWithValue("@p1", cboName.SelectedValue); // insert id from customer CID = UID
@@ -88,6 +88,10 @@ namespace ATM_Machine_Transaction
             db.cmd.Parameters.AddWithValue("@p3", txtPassword.Text);
             db.cmd.Parameters.AddWithValue("@p4", chbActive.Checked);
             db.cmd.Parameters.AddWithValue("@p5", 0.00);
+            db.cmd.Parameters.AddWithValue("@p6", clsGetData.GetID);
+            db.cmd.Parameters.AddWithValue("@p7", DateTime.Now.ToString());
+            db.cmd.Parameters.AddWithValue("@p8", clsGetData.GetID);
+            db.cmd.Parameters.AddWithValue("@p9", DateTime.Now.ToString());
 
             db.con.Open();
             db.cmd.ExecuteNonQuery();
@@ -104,7 +108,7 @@ namespace ATM_Machine_Transaction
 
             DialogResult result = MessageBox.Show("Do you want to update ?", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No) return;
-            string query = "UPDATE Customer_User_tbl cu inner join Customer_tbl c on c.CID = cu.UID set cu.UserName=@username, cu.Password=@pass, Active=@active WHERE c.CID=cu.UID and cu.UID = @uid ";
+            string query = "UPDATE Customer_User_tbl cu inner join Customer_tbl c on c.CID = cu.UID set cu.UserName=@username, cu.Password=@pass, Active=@active, UpdatedBy='"+ clsGetData.GetID + "', UpdatedDate='"+ DateTime.Now.ToString() + "' WHERE c.CID=cu.UID and cu.UID = @uid ";
             db.ConectionStr();
             db.cmd = new OleDbCommand(query, db.con);
 

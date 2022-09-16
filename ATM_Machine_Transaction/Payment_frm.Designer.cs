@@ -49,10 +49,10 @@ namespace ATM_Machine_Transaction
             // 
             // button4
             // 
+            resources.ApplyResources(this.button4, "button4");
             this.button4.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button4, "button4");
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
@@ -60,10 +60,10 @@ namespace ATM_Machine_Transaction
             // 
             // button5
             // 
+            resources.ApplyResources(this.button5, "button5");
             this.button5.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button5, "button5");
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
@@ -71,10 +71,10 @@ namespace ATM_Machine_Transaction
             // 
             // button7
             // 
+            resources.ApplyResources(this.button7, "button7");
             this.button7.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button7, "button7");
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
@@ -82,10 +82,10 @@ namespace ATM_Machine_Transaction
             // 
             // button8
             // 
+            resources.ApplyResources(this.button8, "button8");
             this.button8.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button8, "button8");
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;

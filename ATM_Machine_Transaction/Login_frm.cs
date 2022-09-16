@@ -39,12 +39,13 @@ namespace ATM_Machine_Transaction
                 db.ConectionStr();
                 db.cmd = new OleDbCommand();
                 db.cmd.Connection = db.con;
-                db.cmd.CommandText = "select Username, Pass, Role, Active from Staff_tbl where  Username ='" + txtUser.Text + "' and Pass= '" + txtPass.Text + "' ";
-                db.dr = db.cmd.ExecuteReader(); 
+                db.cmd.CommandText = "select SID, Username, Pass, Role, Active from Staff_tbl where  Username ='" + txtUser.Text + "' and Pass= '" + txtPass.Text + "' ";
+                db.dr = db.cmd.ExecuteReader();
                 int count = 0;
                 bool active = false;
                 while (db.dr.Read())
                 {
+                    clsGetData.GetID = Convert.ToInt32(db.dr["SID"]);
                     clsGetData.GetRole = db.dr["Role"].ToString();
                     active = (bool)db.dr["Active"];
                     count = count + 1;

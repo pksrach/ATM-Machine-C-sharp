@@ -36,7 +36,6 @@ namespace ATM_Machine_Transaction
             this.txtMobilePhone = new System.Windows.Forms.TextBox();
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.btnPayNow = new System.Windows.Forms.Button();
-            this.lbTotalLable = new System.Windows.Forms.Label();
             this.txtNote = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
@@ -44,10 +43,10 @@ namespace ATM_Machine_Transaction
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel1.Controls.Add(this.pic);
             this.panel1.Controls.Add(this.lbTittle);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // pic
@@ -64,8 +63,8 @@ namespace ATM_Machine_Transaction
             // 
             // txtMobilePhone
             // 
-            this.txtMobilePhone.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.txtMobilePhone, "txtMobilePhone");
+            this.txtMobilePhone.ForeColor = System.Drawing.Color.Silver;
             this.txtMobilePhone.Name = "txtMobilePhone";
             this.txtMobilePhone.Tag = "";
             this.txtMobilePhone.Enter += new System.EventHandler(this.txtBox_Enter);
@@ -74,8 +73,8 @@ namespace ATM_Machine_Transaction
             // 
             // txtAmount
             // 
-            this.txtAmount.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.txtAmount, "txtAmount");
+            this.txtAmount.ForeColor = System.Drawing.Color.Silver;
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Tag = "";
             this.txtAmount.Enter += new System.EventHandler(this.txtBox_Enter);
@@ -91,17 +90,11 @@ namespace ATM_Machine_Transaction
             this.btnPayNow.UseVisualStyleBackColor = false;
             this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
-            // lbTotalLable
-            // 
-            resources.ApplyResources(this.lbTotalLable, "lbTotalLable");
-            this.lbTotalLable.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbTotalLable.Name = "lbTotalLable";
-            // 
             // txtNote
             // 
+            resources.ApplyResources(this.txtNote, "txtNote");
             this.txtNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNote.ForeColor = System.Drawing.Color.Silver;
-            resources.ApplyResources(this.txtNote, "txtNote");
             this.txtNote.Name = "txtNote";
             this.txtNote.Tag = "";
             this.txtNote.Enter += new System.EventHandler(this.txtBox_Enter);
@@ -114,7 +107,6 @@ namespace ATM_Machine_Transaction
             this.BackColor = System.Drawing.Color.White;
             this.ControlBox = false;
             this.Controls.Add(this.txtNote);
-            this.Controls.Add(this.lbTotalLable);
             this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.txtMobilePhone);
@@ -138,7 +130,6 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.TextBox txtMobilePhone;
         private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Button btnPayNow;
-        private System.Windows.Forms.Label lbTotalLable;
         private System.Windows.Forms.RichTextBox txtNote;
     }
 }

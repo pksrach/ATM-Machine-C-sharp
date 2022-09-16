@@ -124,17 +124,23 @@
   <data name="txtMobilePhone.Font" type="System.Drawing.Font, System.Drawing">
     <value>Khmer OS New, 14.25pt</value>
   </data>
+  <data name="txtMobilePhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 34</value>
+  </data>
   <data name="txtAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Khmer OS New, 14.25pt</value>
+  </data>
+  <data name="txtAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 34</value>
   </data>
   <data name="txtAmount.Text" xml:space="preserve">
     <value>ចំនួនទឹកប្រាក់</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Khmer OS New, 14.25pt</value>
+  <data name="btnPayNow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Khmer OS New, 18pt</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>សរុប :</value>
+  <data name="btnPayNow.Text" xml:space="preserve">
+    <value>ទូទាត់</value>
   </data>
   <data name="txtNote.Font" type="System.Drawing.Font, System.Drawing">
     <value>Khmer OS Metal Chrieng, 12pt</value>

@@ -31,20 +31,22 @@ namespace ATM_Machine_Transaction
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transaction_frm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbSearch = new System.Windows.Forms.Label();
+            this.cmbSelect = new System.Windows.Forms.ComboBox();
+            this.pPreview = new System.Windows.Forms.PictureBox();
+            this.pSearch = new System.Windows.Forms.PictureBox();
+            this.colNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pPreview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,9 +71,8 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("AKbalthom KhmerLer", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -80,11 +81,16 @@ namespace ATM_Machine_Transaction
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.colNo});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("AKbalthom KhmerLer", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -96,34 +102,7 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
             // 
             // dateTimePicker2
             // 
@@ -146,16 +125,42 @@ namespace ATM_Machine_Transaction
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // lbSearch
+            // cmbSelect
             // 
-            resources.ApplyResources(this.lbSearch, "lbSearch");
-            this.lbSearch.BackColor = System.Drawing.Color.Transparent;
-            this.lbSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbSearch_MouseClick);
-            this.lbSearch.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbSearch_MouseDown);
-            this.lbSearch.MouseEnter += new System.EventHandler(this.lbSearch_MouseEnter);
-            this.lbSearch.MouseLeave += new System.EventHandler(this.lbSearch_MouseLeave);
+            this.cmbSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSelect.FormattingEnabled = true;
+            this.cmbSelect.Items.AddRange(new object[] {
+            resources.GetString("cmbSelect.Items"),
+            resources.GetString("cmbSelect.Items1"),
+            resources.GetString("cmbSelect.Items2"),
+            resources.GetString("cmbSelect.Items3")});
+            resources.ApplyResources(this.cmbSelect, "cmbSelect");
+            this.cmbSelect.Name = "cmbSelect";
+            // 
+            // pPreview
+            // 
+            this.pPreview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pPreview.Image = global::ATM_Machine_Transaction.Properties.Resources.icons8_print_96px;
+            resources.ApplyResources(this.pPreview, "pPreview");
+            this.pPreview.Name = "pPreview";
+            this.pPreview.TabStop = false;
+            this.pPreview.Click += new System.EventHandler(this.pPreview_Click);
+            // 
+            // pSearch
+            // 
+            this.pSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pSearch.Image = global::ATM_Machine_Transaction.Properties.Resources.icons8_search_80px;
+            resources.ApplyResources(this.pSearch, "pSearch");
+            this.pSearch.Name = "pSearch";
+            this.pSearch.TabStop = false;
+            this.pSearch.Click += new System.EventHandler(this.pSearch_Click);
+            // 
+            // colNo
+            // 
+            this.colNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            resources.ApplyResources(this.colNo, "colNo");
+            this.colNo.Name = "colNo";
+            this.colNo.ReadOnly = true;
             // 
             // Transaction_frm
             // 
@@ -163,7 +168,9 @@ namespace ATM_Machine_Transaction
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ControlBox = false;
-            this.Controls.Add(this.lbSearch);
+            this.Controls.Add(this.pPreview);
+            this.Controls.Add(this.pSearch);
+            this.Controls.Add(this.cmbSelect);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
@@ -180,6 +187,8 @@ namespace ATM_Machine_Transaction
             this.Load += new System.EventHandler(this.Transaction_frm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pPreview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,10 +203,9 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Label lbSearch;
+        private System.Windows.Forms.ComboBox cmbSelect;
+        private System.Windows.Forms.PictureBox pSearch;
+        private System.Windows.Forms.PictureBox pPreview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNo;
     }
 }

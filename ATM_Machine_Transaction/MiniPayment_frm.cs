@@ -32,8 +32,7 @@ namespace ATM_Machine_Transaction
             txtNote.Tag = note.Text;
 
             if (clsGetData.CheckBtn == "Transfer")
-            {
-                lbTotalLable.Visible = false;                
+            {          
                 if (clsCheck.MyCheckBtn == "     Choose From Template")
                 {
                     if(clsGetData.MyAccount != "Enter receiver account number")
@@ -55,7 +54,6 @@ namespace ATM_Machine_Transaction
             }
             else
             {
-                lbTotalLable.Visible = true;
                 if(clsGetData.CheckBtn == "Choose From Template")
                 {
                     txtMobilePhone.Text = clsGetData.MyAccount;

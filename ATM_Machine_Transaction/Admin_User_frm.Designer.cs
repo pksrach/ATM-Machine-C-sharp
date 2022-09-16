@@ -286,7 +286,7 @@ namespace ATM_Machine_Transaction
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(15, 116);
+            this.label2.Location = new System.Drawing.Point(15, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 25);
             this.label2.TabIndex = 5;
@@ -295,7 +295,7 @@ namespace ATM_Machine_Transaction
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(142, 113);
+            this.txtPassword.Location = new System.Drawing.Point(142, 139);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(342, 32);
             this.txtPassword.TabIndex = 4;
@@ -303,7 +303,7 @@ namespace ATM_Machine_Transaction
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(142, 65);
+            this.txtUsername.Location = new System.Drawing.Point(142, 91);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(342, 32);
             this.txtUsername.TabIndex = 37;
@@ -314,7 +314,7 @@ namespace ATM_Machine_Transaction
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(15, 68);
+            this.label6.Location = new System.Drawing.Point(15, 94);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 25);
             this.label6.TabIndex = 38;
