@@ -43,6 +43,7 @@ namespace ATM_Machine_Transaction
             dataGridView1.Columns["StaffName"].HeaderText = "Staff Name";
             dataGridView1.Columns["username"].HeaderText = "Username";
             dataGridView1.Columns["pass"].HeaderText = "Password";
+            dataGridView1.Columns["pass"].Visible = false;
             dataGridView1.Columns["MyPosition"].HeaderText = "Position";
 
             txtFullname.Focus();

@@ -35,14 +35,6 @@ namespace ATM_Machine_Transaction
             f.Show();
         }//method lord form
 
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            Login_old frm = new Login_old();
-            frm.Show();
-            this.Hide();
-            
-        }
-
         private void myEventHoverButton(object sender, EventArgs e)
         {
             Button button = (Button)sender;

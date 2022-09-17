@@ -54,9 +54,9 @@ namespace ATM_Machine_Transaction
                 }
             }
         }
-        
+
         //report
-        public void previewDepositReport(String excelPath)
+        public void previewDepositReport(String excelPath, DateTimePicker dStart, DateTimePicker dEnd)
         {
             Microsoft.Office.Interop.Excel.Application Xa = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel.Workbook Wb;
@@ -64,7 +64,7 @@ namespace ATM_Machine_Transaction
             Wb = Xa.Workbooks.Open(excelPath, false, false, true);
             Ws = Wb.Worksheets["sheet1"];
             String sql = "select Tran_Ref, Tran_Date, Deposit_Amount from Cash_Deposit_Transaction_tbl ";
-            String where = "where CInt(Dep_UserId) = '" + clsGetData.GetID.ToString() + "' ";
+            String where = "where CInt(Dep_UserId) = '" + clsGetData.GetID.ToString() + "' and DateValue(Tran_Date) BETWEEN " + dStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dEnd.Value.ToString("#dd/MMM/yyyy#") + " ";
             db.ConectionStr();
             db.cmd = new OleDbCommand(sql + where, db.con);
             //db.cmd.CommandText =;
@@ -111,7 +111,7 @@ namespace ATM_Machine_Transaction
             Xa.Quit();
         }//preview deposit
 
-        public void previewWithdrawalReport(String excelPath)
+        public void previewWithdrawalReport(String excelPath, DateTimePicker dStart, DateTimePicker dEnd)
         {
             Microsoft.Office.Interop.Excel.Application Xa = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel.Workbook Wb;
@@ -119,7 +119,7 @@ namespace ATM_Machine_Transaction
             Wb = Xa.Workbooks.Open(excelPath, false, false, true);
             Ws = Wb.Worksheets["sheet1"];
             String sql = "select Tran_Ref, Tran_Date, Withdrawal_Amount from Cash_Withdrawal_Transaction_tbl ";
-            String where = "where CInt(Win_UserId) = '" + clsGetData.GetID.ToString() + "' ";
+            String where = "where CInt(Win_UserId) = '" + clsGetData.GetID.ToString() + "' and DateValue(Tran_Date) BETWEEN " + dStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dEnd.Value.ToString("#dd/MMM/yyyy#") + " ";
             db.ConectionStr();
             db.cmd = new OleDbCommand(sql + where, db.con);
             //db.cmd.CommandText =;
@@ -166,7 +166,7 @@ namespace ATM_Machine_Transaction
             Xa.Quit();
         }//previewWithdrawalReport
 
-        public void previewTransferReport(String excelPath)
+        public void previewTransferReport(String excelPath, DateTimePicker dStart, DateTimePicker dEnd)
         {
 
             Microsoft.Office.Interop.Excel.Application Xa = new Microsoft.Office.Interop.Excel.Application();
@@ -178,7 +178,7 @@ namespace ATM_Machine_Transaction
             if (clsGetData.MyLanguage == "ភាសាខ្មែរ") type = "type_transaction_kh";
             else type = "type_transaction";
             String sql = "SELECT tf.TRAN_REF, tf.TRAN_DATE, tf.TRANSFER_AMOUNT, c.FullName AS TO_USER, c.AccountNo, tf.NOTES, tt." + type + " FROM Transaction_Type_tbl AS tt INNER JOIN (Cash_Transfer_Transaction AS tf LEFT JOIN Customer_tbl AS c ON tf.TO_USERID = c.CID ) ON tt.type_id = tf.TYPE_ID ";
-            String where = "WHERE CInt(tf.FROM_USERID)= '" + clsGetData.GetID + "' OR CInt(tf.TO_USERID)= '" + clsGetData.GetID + "' ";
+            String where = "WHERE CInt(tf.FROM_USERID)= '" + clsGetData.GetID + "' AND DateValue(tf.TRAN_DATE) BETWEEN " + dStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dEnd.Value.ToString("#dd/MMM/yyyy#") + " ";
             db.ConectionStr();
             db.cmd = new OleDbCommand(sql + where, db.con);
             OleDbDataReader dr = db.cmd.ExecuteReader();
@@ -236,7 +236,7 @@ namespace ATM_Machine_Transaction
             Xa.Quit();
         }//previewTransferReport
 
-        public void previewPaymentReport(String excelPath)
+        public void previewPaymentReport(String excelPath, DateTimePicker dStart, DateTimePicker dEnd)
         {
             Microsoft.Office.Interop.Excel.Application Xa = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel.Workbook Wb;
@@ -247,7 +247,7 @@ namespace ATM_Machine_Transaction
             if (clsGetData.MyLanguage == "ភាសាខ្មែរ") type = "type_transaction_kh";
             else type = "type_transaction";
             String sql = "SELECT bp.Tran_Ref, bp.Tran_Date, bp.Transfer_Amount, bp.Billing_No, tt." + type + " FROM Bill_Payment_Transaction as bp  INNER JOIN Transaction_Type_tbl AS tt ON bp.Billing_Type = tt.type_id ";
-            String where = "WHERE CInt(bp.User_ID)= '" + clsGetData.GetID + "' ";
+            String where = "WHERE CInt(bp.User_ID)= '" + clsGetData.GetID + "' and DateValue(bp.Tran_Date) BETWEEN " + dStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dEnd.Value.ToString("#dd/MMM/yyyy#") + " ";
             db.da = new OleDbDataAdapter(sql + where, db.con);
             db.ConectionStr();
             db.cmd = new OleDbCommand(sql + where, db.con);

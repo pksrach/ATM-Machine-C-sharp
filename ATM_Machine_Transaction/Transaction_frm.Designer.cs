@@ -35,14 +35,14 @@ namespace ATM_Machine_Transaction
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.colNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbSelect = new System.Windows.Forms.ComboBox();
             this.pPreview = new System.Windows.Forms.PictureBox();
             this.pSearch = new System.Windows.Forms.PictureBox();
-            this.colNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPreview)).BeginInit();
@@ -72,7 +72,7 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("AKbalthom KhmerLer", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Khmer OS Siemreap", 9.75F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -85,7 +85,7 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("AKbalthom KhmerLer", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("AKbalthom Naga", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -104,21 +104,28 @@ namespace ATM_Machine_Transaction
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
             // 
-            // dateTimePicker2
+            // colNo
             // 
-            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 23, 1, 16, 30, 0);
+            this.colNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            resources.ApplyResources(this.colNo, "colNo");
+            this.colNo.Name = "colNo";
+            this.colNo.ReadOnly = true;
+            // 
+            // dateEnd
+            // 
+            resources.ApplyResources(this.dateEnd, "dateEnd");
+            this.dateEnd.Name = "dateEnd";
+            this.dateEnd.Value = new System.DateTime(2022, 5, 23, 1, 16, 30, 0);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // dateTimePicker1
+            // dateStart
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            resources.ApplyResources(this.dateStart, "dateStart");
+            this.dateStart.Name = "dateStart";
             // 
             // label2
             // 
@@ -155,13 +162,6 @@ namespace ATM_Machine_Transaction
             this.pSearch.TabStop = false;
             this.pSearch.Click += new System.EventHandler(this.pSearch_Click);
             // 
-            // colNo
-            // 
-            this.colNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            resources.ApplyResources(this.colNo, "colNo");
-            this.colNo.Name = "colNo";
-            this.colNo.ReadOnly = true;
-            // 
             // Transaction_frm
             // 
             resources.ApplyResources(this, "$this");
@@ -171,9 +171,9 @@ namespace ATM_Machine_Transaction
             this.Controls.Add(this.pPreview);
             this.Controls.Add(this.pSearch);
             this.Controls.Add(this.cmbSelect);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateEnd);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -199,9 +199,9 @@ namespace ATM_Machine_Transaction
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateEnd;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateStart;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbSelect;
         private System.Windows.Forms.PictureBox pSearch;

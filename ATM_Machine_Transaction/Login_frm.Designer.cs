@@ -101,12 +101,12 @@ namespace ATM_Machine_Transaction
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(107, 204);
+            this.label3.Location = new System.Drawing.Point(62, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 47);
+            this.label3.Size = new System.Drawing.Size(212, 47);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Login";
+            this.label3.Text = "Login ATM";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel_top_bar

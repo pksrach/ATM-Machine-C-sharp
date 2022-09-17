@@ -21,13 +21,6 @@ namespace ATM_Machine_Transaction
             InitializeComponent();
         }
 
-        private void lbExit_Click(object sender, EventArgs e)
-        {
-            Main_frm frm = new Main_frm();
-            frm.Show();
-            this.Hide();
-        }
-
         private void AccountSetting_Load(object sender, EventArgs e)
         {
 

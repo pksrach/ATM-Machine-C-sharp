@@ -41,7 +41,8 @@ namespace ATM_Machine_Transaction
             md.ComboBoxData(cboName, "SELECT CID, FullName FROM Customer_tbl LEFT JOIN Customer_User_tbl ON Customer_tbl.CID = Customer_User_tbl.UID WHERE (((UID) Is Null))", "FullName", "CID");
             md.LoadData(dataGridView1, "Select UID, UserName, Password, Active, Balance from Customer_User_tbl");
             dataGridView1.Columns["UID"].Visible = false;
-            
+            dataGridView1.Columns["Password"].Visible = false;
+
             dataGridView1.ClearSelection();
             txtPassword.Text = null;
             txtUsername.Text = null;

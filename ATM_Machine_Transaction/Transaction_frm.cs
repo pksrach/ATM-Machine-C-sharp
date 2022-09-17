@@ -30,10 +30,10 @@ namespace ATM_Machine_Transaction
         DbConnection db = new DbConnection();
         private void display_Deposit()
         {
-            //dataGridView1.Rows.Clear();
             db.ConectionStr();
+            
             db.dt = new DataTable();
-            db.da = new OleDbDataAdapter("select Tran_Ref, Tran_Date, Deposit_Amount from Cash_Deposit_Transaction_tbl where CInt(Dep_UserId) = '" + clsGetData.GetID.ToString() + "' ", db.con);
+            db.da = new OleDbDataAdapter("select Tran_Ref, Tran_Date, Deposit_Amount from Cash_Deposit_Transaction_tbl where CInt(Dep_UserId) = '" + clsGetData.GetID.ToString() + "' and DateValue(Tran_Date) BETWEEN " + dateStart.Value.ToString("#dd/MMM/yyyy#") +" AND "+dateEnd.Value.ToString("#dd/MMM/yyyy#") +" ", db.con);
             db.da.Fill(db.dt);
             dataGridView1.DataSource = db.dt;
             dataGridView1.Columns["Tran_Ref"].HeaderText = "Transaction Reference";
@@ -69,7 +69,7 @@ namespace ATM_Machine_Transaction
         {
             db.ConectionStr();
             db.dt = new DataTable();
-            db.da = new OleDbDataAdapter("select Tran_Ref, Tran_Date, Withdrawal_Amount from Cash_Withdrawal_Transaction_tbl where CInt(Win_UserId) = '" + clsGetData.GetID.ToString() + "' ", db.con);
+            db.da = new OleDbDataAdapter("select Tran_Ref, Tran_Date, Withdrawal_Amount from Cash_Withdrawal_Transaction_tbl where CInt(Win_UserId) = '" + clsGetData.GetID.ToString() + "' and DateValue(Tran_Date) BETWEEN " + dateStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dateEnd.Value.ToString("#dd/MMM/yyyy#") + " ", db.con);
             db.da.Fill(db.dt);
             dataGridView1.DataSource = db.dt;
             dataGridView1.Columns["Tran_Ref"].HeaderText = "Transaction Reference";
@@ -94,7 +94,7 @@ namespace ATM_Machine_Transaction
             if (clsGetData.MyLanguage == "ភាសាខ្មែរ") type = "type_transaction_kh";
             else type = "type_transaction";
             string sql = "SELECT tf.TRAN_REF, tf.TRAN_DATE, tf.TRANSFER_AMOUNT, c.FullName AS TO_USER, c.AccountNo, tf.NOTES, tt." + type + " FROM Transaction_Type_tbl AS tt INNER JOIN (Cash_Transfer_Transaction AS tf LEFT JOIN Customer_tbl AS c ON tf.TO_USERID = c.CID ) ON tt.type_id = tf.TYPE_ID ";
-            string where = "WHERE CInt(tf.FROM_USERID)= '" + clsGetData.GetID + "' OR CInt(tf.TO_USERID)= '" + clsGetData.GetID + "' "; 
+            string where = "WHERE CInt(tf.FROM_USERID)= '" + clsGetData.GetID + "' AND DateValue(tf.TRAN_DATE) BETWEEN " + dateStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dateEnd.Value.ToString("#dd/MMM/yyyy#") + " "; 
             db.da = new OleDbDataAdapter(sql + where, db.con);
             db.da.Fill(db.dt);
             dataGridView1.DataSource = db.dt;
@@ -130,7 +130,7 @@ namespace ATM_Machine_Transaction
             if (clsGetData.MyLanguage == "ភាសាខ្មែរ") type = "type_transaction_kh";
             else type = "type_transaction";
             string sql = "SELECT bp.Tran_Ref, bp.Tran_Date, bp.Transfer_Amount, bp.Billing_No, tt." + type + " FROM Bill_Payment_Transaction as bp  INNER JOIN Transaction_Type_tbl AS tt ON bp.Billing_Type = tt.type_id ";
-            string where = "WHERE CInt(bp.User_ID)= '" + clsGetData.GetID + "' ";
+            string where = "WHERE CInt(bp.User_ID)= '" + clsGetData.GetID + "' and DateValue(bp.Tran_Date) BETWEEN " + dateStart.Value.ToString("#dd/MMM/yyyy#") + " AND " + dateEnd.Value.ToString("#dd/MMM/yyyy#") + " ";
             db.da = new OleDbDataAdapter(sql + where, db.con);
             db.da.Fill(db.dt);
             dataGridView1.DataSource = db.dt;
@@ -156,7 +156,8 @@ namespace ATM_Machine_Transaction
 
         private void Transaction_frm_Load(object sender, EventArgs e)
         {
-
+            dateStart.Value = DateTime.Now;
+            dateEnd.Value = DateTime.Now;
         }
 
         private void pSearch_Click(object sender, EventArgs e)
@@ -188,16 +189,16 @@ namespace ATM_Machine_Transaction
             string str = cmbSelect.SelectedItem.ToString();
             switch (str) {
                 case "Deposit":
-                    mtd.previewDepositReport(Application.StartupPath + @"\reports\deposit_rpt_template.xlsx");
+                    mtd.previewDepositReport(Application.StartupPath + @"\reports\deposit_rpt_template.xlsx", dateStart, dateEnd);
                     break;
                 case "Withdraw":
-                    mtd.previewWithdrawalReport(Application.StartupPath + @"\reports\withdraw_rpt_template.xlsx");
+                    mtd.previewWithdrawalReport(Application.StartupPath + @"\reports\withdraw_rpt_template.xlsx", dateStart, dateEnd);
                     break;
                 case "Transfer":
-                    mtd.previewTransferReport(Application.StartupPath + @"\reports\transfer_rpt_template.xlsx");
+                    mtd.previewTransferReport(Application.StartupPath + @"\reports\transfer_rpt_template.xlsx", dateStart, dateEnd);
                     break;
                 case "Payment":
-                    mtd.previewPaymentReport(Application.StartupPath + @"\reports\payment_rpt_template.xlsx");
+                    mtd.previewPaymentReport(Application.StartupPath + @"\reports\payment_rpt_template.xlsx", dateStart, dateEnd);
                     break;
                 default:
                     break;

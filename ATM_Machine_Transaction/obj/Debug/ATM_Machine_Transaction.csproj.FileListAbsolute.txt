@@ -66,13 +66,13 @@ D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.
 D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe
 D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.pdb
 D:\SS5\ATM-Machine-C-\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.v20.1.dll
+D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.v20.1.xml
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.exe.config
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.exe
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ATM_Machine_Transaction.pdb
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\km-KH\ATM_Machine_Transaction.resources.dll
-D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\km\ATM_Machine_Transaction.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
-D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.v20.1.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Printing.v20.1.Core.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Utils.v20.1.dll
@@ -81,7 +81,6 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.XtraEdit
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
-D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Data.v20.1.xml
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Printing.v20.1.Core.xml
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\DevExpress.Utils.v20.1.xml
@@ -117,7 +116,6 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\de\DevExpress.Pdf.v
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
-D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csprojAssemblyReference.cache
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.ResolveComReference.cache
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Admin_Staff_frm.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Admin_User_frm.resources
@@ -135,16 +133,13 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transac
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Withdraw_frm.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Deposit_frm.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.resources
-D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Login_old.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_Form_1.resources
-D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_frm.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Properties.Resources.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AccountSetting.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.AlertMessage_frm.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.ConfirmWithdraw_frm.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Deposit_frm.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_Form_1.km-KH.resources
-D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Main_frm.km.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.MiniPayment_frm.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Transfer_frm.km-KH.resources
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.Payment_frm.km-KH.resources
@@ -153,7 +148,6 @@ D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transac
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe.licenses
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CoreCompileInputs.cache
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\km-KH\ATM_Machine_Transaction.resources.dll
-D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\km\ATM_Machine_Transaction.resources.dll
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.csproj.CopyComplete
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.exe
 D:\Git\Project For Midterm\ATM_Machine_Transaction\obj\Debug\ATM_Machine_Transaction.pdb

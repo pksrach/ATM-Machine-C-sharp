@@ -172,7 +172,7 @@
     <value>6</value>
   </data>
   <data name="colNo.Width" type="System.Int32, mscorlib">
-    <value>58</value>
+    <value>56</value>
   </data>
   <data name="dataGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -225,31 +225,31 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="dateTimePicker2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="dateEnd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <data name="dateTimePicker2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="dateEnd.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 12pt</value>
   </data>
-  <data name="dateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dateEnd.Location" type="System.Drawing.Point, System.Drawing">
     <value>440, 96</value>
   </data>
-  <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dateEnd.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
   </data>
-  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+  <data name="dateEnd.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker2.Name" xml:space="preserve">
-    <value>dateTimePicker2</value>
+  <data name="&gt;&gt;dateEnd.Name" xml:space="preserve">
+    <value>dateEnd</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker2.Type" xml:space="preserve">
+  <data name="&gt;&gt;dateEnd.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dateEnd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dateEnd.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
@@ -285,34 +285,34 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="dateTimePicker1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="dateStart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <data name="dateTimePicker1.CalendarFont" type="System.Drawing.Font, System.Drawing">
+  <data name="dateStart.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 12pt</value>
   </data>
-  <data name="dateTimePicker1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="dateStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 12pt</value>
   </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dateStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 97</value>
   </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dateStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
   </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+  <data name="dateStart.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
+  <data name="&gt;&gt;dateStart.Name" xml:space="preserve">
+    <value>dateStart</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+  <data name="&gt;&gt;dateStart.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dateStart.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dateStart.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">

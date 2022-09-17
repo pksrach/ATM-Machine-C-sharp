@@ -35,39 +35,6 @@ namespace ATM_Machine_Transaction
             txtFullname.Focus();
             MyRefresh();
         }
-
-        private void picBox_Click(object sender, EventArgs e)
-        {
-            try
-            {
-            string myPictrues = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-            openFileDialog1.Filter = "|*.jpg||*.jpeg||*.png|All|*.*";
-            openFileDialog1.FileName = "Imgae file name";
-            openFileDialog1.Title = "Choose an image...";
-            openFileDialog1.AddExtension = true;
-            openFileDialog1.FilterIndex = 0;
-            openFileDialog1.Multiselect = false;
-            openFileDialog1.ValidateNames = true;
-            openFileDialog1.InitialDirectory = myPictrues;
-            openFileDialog1.RestoreDirectory = true;
-            DialogResult d = openFileDialog1.ShowDialog();
-            if (d == DialogResult.OK)
-            {
-                this.picBox.Image = Image.FromFile(openFileDialog1.FileName);
-                //String path = openFileDialog1.FileName;
-                //picBox.ImageLocation = path;
-                //pictureBox1.Image = Image.FromFile(path);
-            }
-                else
-                {
-                    return;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Error: somthing went wrong.", "Choose Image: .....", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
         
         private void LoadDataInDb()
         {
